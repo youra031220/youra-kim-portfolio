@@ -1,10 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <rect width="1200" height="630" fill="#0f0d0b"/>
-  <rect x="760" width="440" height="630" fill="#1c1916"/>
-  <path d="M760 0 1200 440M760 130l440 440M890 0l310 310" stroke="#f6f2ea" stroke-opacity=".08"/>
-  <text x="72" y="76" font-family="Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="4" fill="#b0122c">FINANCE · DATA · AI · SERVICE</text>
-  <text x="72" y="225" font-family="Georgia,serif" font-size="72" font-weight="700" fill="#f6f2ea">YOURA KIM</text>
-  <text x="72" y="315" font-family="Georgia,serif" font-size="58" font-style="italic" fill="#f6f2ea">From signal to strategy.</text>
-  <text x="72" y="410" font-family="Arial,sans-serif" font-size="23" fill="#bdb8ae">금융 데이터를 서비스와 전략으로 연결합니다.</text>
-  <text x="860" y="350" font-family="Georgia,serif" font-size="220" font-style="italic" fill="#b0122c">Y</text>
+  <defs>
+    <radialGradient id="a" cx="0" cy="0" r="1" gradientTransform="translate(170 90) rotate(42) scale(490 350)"><stop stop-color="#ffb49d" stop-opacity=".48"/><stop offset="1" stop-color="#f7f4ed" stop-opacity="0"/></radialGradient>
+    <radialGradient id="b" cx="0" cy="0" r="1" gradientTransform="translate(1040 170) rotate(140) scale(430 330)"><stop stop-color="#9fc5ff" stop-opacity=".45"/><stop offset="1" stop-color="#f7f4ed" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#f7f4ed"/><rect width="1200" height="630" fill="url(#a)"/><rect width="1200" height="630" fill="url(#b)"/>
+  <rect x="70" y="68" width="1060" height="494" rx="24" fill="#fcfbf8" fill-opacity=".56" stroke="#fff"/>
+  <text x="110" y="132" font-family="Arial,sans-serif" font-size="16" font-weight="600" letter-spacing="3" fill="#5f5f5d">FINANCE · DATA · AI · SERVICE</text>
+  <text x="110" y="280" font-family="Arial,sans-serif" font-size="78" font-weight="600" letter-spacing="-3" fill="#1c1c1c">YOURA KIM</text>
+  <text x="110" y="370" font-family="Arial,sans-serif" font-size="54" font-weight="600" letter-spacing="-2" fill="#1c1c1c">From signal to strategy.</text>
+  <text x="110" y="450" font-family="Arial,sans-serif" font-size="24" fill="#5f5f5d">금융 데이터를 서비스와 전략으로 연결합니다.</text>
+  <rect x="110" y="490" width="150" height="44" rx="7" fill="#1c1c1c"/><text x="145" y="518" font-family="Arial,sans-serif" font-size="14" fill="#fcfbf8">VIEW WORK</text>
 </svg>
