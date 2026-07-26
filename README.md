@@ -1,6 +1,8 @@
 # 김유라 포트폴리오
 
-금융·데이터·AI·서비스기획 직무 지원을 위한 한 페이지형 포트폴리오입니다. Next.js 14, React, TypeScript로 제작했습니다.
+금융·데이터·AI·서비스기획 직무 지원을 위한 한 페이지형 포트폴리오입니다. Next.js 16, React, TypeScript로 제작했습니다.
+
+배포 사이트: https://youra031220.github.io/youra-kim-portfolio/
 
 ## 실행
 
