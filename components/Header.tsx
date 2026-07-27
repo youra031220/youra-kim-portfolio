@@ -4,8 +4,8 @@ import { useState } from "react";
 import { MenuIcon } from "./Icons";
 
 const nav = [
-  ["소개", "#about"],
-  ["프로젝트", "#projects"],
+  ["About", "#about"],
+  ["Projects", "#projects"],
 ];
 
 export function Header() {
@@ -21,10 +21,12 @@ export function Header() {
           {nav.map(([label, href]) => (
             <a key={href} href={`${basePath}/${href}`} onClick={() => setOpen(false)}>{label}</a>
           ))}
+          <a href={`${basePath}/playground/`} onClick={() => setOpen(false)}>Playground</a>
           <a href={`${basePath}/#contact`} onClick={() => setOpen(false)}>연락처</a>
         </nav>
         <nav className="nav-group" aria-label="주요 메뉴">
           {nav.map(([label, href]) => <a key={href} href={`${basePath}/${href}`}>{label}</a>)}
+          <a href={`${basePath}/playground/`}>Playground</a>
         </nav>
         <a className="header-cta" href={`${basePath}/#contact`}>함께 이야기하기</a>
         <button className="menu-button" type="button" aria-label={open ? "메뉴 닫기" : "메뉴 열기"} aria-expanded={open} onClick={() => setOpen(!open)}>
