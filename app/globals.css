@@ -231,7 +231,12 @@ footer { padding: 62px 0 28px; overflow: hidden; border-top: 1px solid var(--lin
   main > section { scroll-snap-align: none; scroll-margin-top: 82px; }
   .section-heading { scroll-snap-align: none; scroll-snap-stop: normal; }
   .header-texture, .hero-texture { mix-blend-mode: normal; }
-  .fade-in { animation-duration: .25s; }
+  .fade-in { animation: none; }
+  .project-card, .project-card:hover { rotate: 0deg; box-shadow: none; transition: none; }
+  .skill-tags button { pointer-events: none; cursor: default; transition: none; }
+  .skill-tags button:hover,
+  .skill-tags button:nth-child(even):hover,
+  .skill-tags button.is-selected { color: #171717; background: #fff; transform: none; }
   .container, .nav-wrap, .section-heading .container { width: min(calc(100% - 32px), var(--max)); }
   .site-header { height: 82px; }
   .nav-links { top: 82px; }
