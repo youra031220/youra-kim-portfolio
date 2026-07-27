@@ -76,6 +76,11 @@ export function Portfolio() {
 
       <section id="about" className="section about">
         <SectionTitle title="About" />
+        <span
+          className="about-texture"
+          style={{ backgroundImage: `url("${assetPath("/images/fresh-snow.png")}")` }}
+          aria-hidden="true"
+        />
         <div className="container">
           <div className="about-grid">
             <FadeIn className="about-lead"><p>경영학과 아트&테크놀로지를 복수전공하며 <strong>금융, 데이터 분석, AI, 서비스기획</strong>을 함께 공부했습니다.</p></FadeIn>
