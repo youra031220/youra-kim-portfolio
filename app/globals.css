@@ -71,10 +71,8 @@ svg { width: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-l
 .section-heading-inner { min-height: 48px; padding-top: 10px; padding-bottom: 10px; display: flex; align-items: center; justify-content: space-between; }
 .section-heading h2 { margin: 0; font-size: 18px; font-weight: 650; line-height: 1.2; letter-spacing: -.2px; }
 .section-heading > p { margin: 0; color: var(--muted); font-size: 12px; }
-.about { min-height: 100svh; position: relative; background: #c4e6ff; border-top: 1px solid var(--line); }
+.about { min-height: 100svh; position: relative; background-color: #c4e6ff; background-repeat: repeat; background-size: 500px 500px; border-top: 1px solid var(--line); }
 .about .section-heading { position: relative; z-index: 2; background: var(--background); }
-.about-texture { position: absolute; inset: 48px 0 0; z-index: 0; pointer-events: none; background-repeat: repeat; background-size: 500px 500px; background-position: 0 0, 125px 75px, 250px 165px, 380px 290px; opacity: 1; mix-blend-mode: multiply; }
-.about > .container { position: relative; z-index: 1; }
 .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8%; padding-bottom: 58px; }
 .about p { margin: 0; }
 .about-lead { font-size: 24px; line-height: 1.45; letter-spacing: -.4px; }
