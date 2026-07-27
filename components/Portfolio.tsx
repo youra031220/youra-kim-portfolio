@@ -126,7 +126,7 @@ export function Portfolio() {
                     </div>
                     <div className="project-card-bottom">
                       <div className="tags">{project.tags.slice(0, 3).map(tag => <span key={tag}>{tag}</span>)}</div>
-                      <span className="project-detail-link">자세히 보기 <ArrowUpRight /></span>
+                      <span className="project-detail-link">Link <ArrowUpRight /></span>
                     </div>
                   </div>
                 </Link>
