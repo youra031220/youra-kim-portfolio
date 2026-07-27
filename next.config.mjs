@@ -10,6 +10,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isGitHubPages ? "/youra-kim-portfolio" : "",
+  },
 };
 
 export default nextConfig;

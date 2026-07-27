@@ -7,6 +7,9 @@ import { LinkButton } from "./LinkButton";
 import { FadeIn } from "./FadeIn";
 import { ArrowDown, ArrowUpRight } from "./Icons";
 
+const assetPath = (path: string) =>
+  path.startsWith("/") ? `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${path}` : path;
+
 function SectionTitle({ eyebrow, title, copy }: { eyebrow: string; title: string; copy?: string }) {
   return <div className="section-heading">
     <p className="eyebrow">{eyebrow}</p>
@@ -42,7 +45,7 @@ export function Portfolio() {
           </FadeIn>
           <FadeIn className="hero-art" delay={100}>
             <Image
-              src="/images/youra-portrait.png"
+              src={assetPath("/images/mydrawing.png")}
               alt="김유라를 표현한 선화 일러스트"
               fill
               priority
@@ -120,7 +123,7 @@ export function Portfolio() {
           <div className="report-grid">
             {reports.map((report, i) => (
               <FadeIn className="report-card" key={report.title} delay={i * 60}>
-                <div className="report-cover"><Image src={report.cover} alt={`${report.title} 표지 미리보기`} fill sizes="(max-width: 700px) 100vw, 25vw" /></div>
+                <div className="report-cover"><Image src={assetPath(report.cover)} alt={`${report.title} 표지 미리보기`} fill sizes="(max-width: 700px) 100vw, 25vw" /></div>
                 <div className="report-info">
                   <span className="document-type">DOCUMENT · {report.date}</span>
                   <h3>{report.title}</h3><p>{report.description}</p>
@@ -141,7 +144,7 @@ export function Portfolio() {
           <div className="website-grid">
             {websites.map(site => (
               <FadeIn className="website-card" key={site.title}>
-                <div className="website-shot"><Image src={site.thumbnail} alt={`${site.title} 웹사이트 화면`} fill sizes="(max-width: 800px) 100vw, 60vw" /></div>
+                <div className="website-shot"><Image src={assetPath(site.thumbnail)} alt={`${site.title} 웹사이트 화면`} fill sizes="(max-width: 800px) 100vw, 60vw" /></div>
                 <div className="website-info">
                   <span className="site-no">WEB PROJECT</span><h3>{site.title}</h3><p>{site.description}</p>
                   <dl><dt>담당 역할</dt><dd>{site.role}</dd></dl>

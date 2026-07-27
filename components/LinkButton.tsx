@@ -7,7 +7,10 @@ export function LinkButton({ item, primary = false }: { item: LinkItem; primary?
       {item.label}<span className="link-status">추가 예정</span>
     </span>;
   }
-  return <a className={`link-button ${primary ? "primary" : ""}`} href={item.href} target={item.href.startsWith("http") ? "_blank" : undefined} rel="noreferrer" download={item.download}>
+  const href = item.href.startsWith("/")
+    ? `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${item.href}`
+    : item.href;
+  return <a className={`link-button ${primary ? "primary" : ""}`} href={href} target={item.href.startsWith("http") ? "_blank" : undefined} rel="noreferrer" download={item.download}>
     {item.label}<ArrowUpRight />
   </a>;
 }

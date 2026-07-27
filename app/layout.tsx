@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     description: "금융 데이터를 서비스와 전략으로 연결합니다.",
     type: "website",
     locale: "ko_KR",
-    images: [{ url: "/images/og-cover.svg", width: 1200, height: 630, alt: "김유라 포트폴리오" }],
+    images: [{ url: "/youra-kim-portfolio/images/og-cover.svg", width: 1200, height: 630, alt: "김유라 포트폴리오" }],
   },
 };
 
