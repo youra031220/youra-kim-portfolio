@@ -6,6 +6,7 @@ export type LinkItem = {
 
 export type Project = {
   id: string;
+  thumbnail?: string;
   index: string;
   title: string;
   subtitle: string;

@@ -100,14 +100,35 @@ export function Portfolio() {
             {projects.map((project, i) => (
               <FadeIn key={project.id} className="project-card" delay={Math.min(i * 50, 150)}>
                 <Link className="project-card-link" href={`/projects/${project.id}`} aria-label={`${project.title} 상세 페이지 보기`}>
-                  <div className="project-top">
-                    <span className="project-index">{project.index}</span>
-                    <div className="project-title"><p>{project.subtitle}</p><h3>{project.title}</h3></div>
-                    <div className="achievement"><span>KEY OUTCOME</span><strong>{project.achievement}</strong></div>
+                  <div className="project-card-period">
+                    <span>{project.period}</span>
+                    <span>{project.index}</span>
                   </div>
-                  <div className="project-front-footer">
-                    <div className="tags">{project.tags.map(tag => <span key={tag}>{tag}</span>)}</div>
-                    <span className="project-detail-link">자세히 보기 <ArrowUpRight /></span>
+                  <div className="project-card-name">
+                    <h3>{project.title}</h3>
+                  </div>
+                  <div className="project-thumbnail">
+                    {project.thumbnail ? (
+                      <Image
+                        src={assetPath(project.thumbnail)}
+                        alt={`${project.title} 프로젝트 썸네일`}
+                        fill
+                        sizes="(max-width: 700px) 100vw, 50vw"
+                      />
+                    ) : (
+                      <span>THUMBNAIL<br />COMING SOON</span>
+                    )}
+                  </div>
+                  <div className="project-card-summary">
+                    <p>{project.subtitle}</p>
+                    <div className="project-card-outcome">
+                      <span>KEY OUTCOME</span>
+                      <strong>{project.achievement}</strong>
+                    </div>
+                    <div className="project-card-bottom">
+                      <div className="tags">{project.tags.slice(0, 3).map(tag => <span key={tag}>{tag}</span>)}</div>
+                      <span className="project-detail-link">자세히 보기 <ArrowUpRight /></span>
+                    </div>
                   </div>
                 </Link>
               </FadeIn>
