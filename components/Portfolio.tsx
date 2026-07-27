@@ -78,7 +78,11 @@ export function Portfolio() {
         <SectionTitle title="About" />
         <span
           className="about-texture"
-          style={{ backgroundImage: `url("${assetPath("/images/fresh-snow.png")}")` }}
+          style={{
+            backgroundImage: Array(4)
+              .fill(`url("${assetPath("/images/fresh-snow.png")}")`)
+              .join(", "),
+          }}
           aria-hidden="true"
         />
         <div className="container">
