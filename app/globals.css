@@ -38,7 +38,6 @@ svg { width: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-l
 .nav-links, .menu-button { display: none; }
 
 .hero { min-height: max(840px, 100svh); padding: 165px 0 80px; position: relative; background: var(--background); }
-.hero-texture { position: absolute; inset: 0; pointer-events: none; background-repeat: repeat; background-size: 500px 500px; opacity: .9; mix-blend-mode: multiply; }
 .hero > .container { position: relative; z-index: 1; }
 .hero-grid { min-height: max(615px, calc(100svh - 245px)); display: grid; grid-template-columns: 1.28fr .72fr; grid-template-rows: 1fr auto; column-gap: 8%; align-items: center; }
 .hero-copy { min-width: 0; padding-bottom: 28px; }
@@ -232,7 +231,6 @@ footer { padding: 62px 0 28px; overflow: hidden; border-top: 1px solid var(--lin
   main > section { scroll-snap-align: none; scroll-margin-top: 82px; }
   .section-heading { scroll-snap-align: none; scroll-snap-stop: normal; }
   .header-texture { mix-blend-mode: normal; }
-  .hero-texture { opacity: .7; mix-blend-mode: multiply; }
   .fade-in { animation: none; }
   .project-card, .project-card:hover { rotate: 0deg; box-shadow: none; transition: none; }
   .skill-tags button { pointer-events: none; cursor: default; transition: none; }
