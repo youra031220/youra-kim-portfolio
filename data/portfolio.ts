@@ -193,3 +193,14 @@ export const websites = [
     githubUrl: "",
   },
 ];
+
+// Playground 작업은 이 배열에 추가하세요. 실제 URL이나 이미지가 생기면 빈 문자열만 교체하면 됩니다.
+export const playgroundItems = [
+  {
+    title: "사진전시회 웹사이트",
+    description: "사진 전시를 웹에서 경험할 수 있도록 제작한 전시 웹사이트",
+    type: "WEB EXHIBITION",
+    thumbnail: "",
+    siteUrl: "",
+  },
+];

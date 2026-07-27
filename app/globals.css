@@ -139,9 +139,21 @@ svg { width: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-l
 .project-detail-content li + li { margin-top: 12px; }
 .project-detail-footer { padding: 28px 0; display: flex; justify-content: space-between; gap: 30px; border-top: 1px solid var(--text); }
 .playground-page { min-height: 100svh; padding-top: 96px; }
-.playground-empty { min-height: calc(100svh - 147px); padding-top: 12vh; padding-bottom: 12vh; display: flex; flex-direction: column; justify-content: center; }
-.playground-empty > p { margin: 0 0 18px; color: var(--purple); font-size: 12px; font-weight: 600; letter-spacing: .1em; }
-.playground-empty h1 { margin: 0; font-size: clamp(48px, 7vw, 96px); font-weight: 600; line-height: 1.08; letter-spacing: -3px; }
+.playground-content { padding-top: 90px; padding-bottom: 120px; }
+.playground-intro { margin-bottom: 70px; }
+.playground-intro > p { margin: 0 0 18px; color: var(--purple); font-size: 12px; font-weight: 600; letter-spacing: .1em; }
+.playground-intro h1 { margin: 0; font-size: clamp(48px, 7vw, 96px); font-weight: 600; line-height: 1.08; letter-spacing: -3px; }
+.playground-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; }
+.playground-card { overflow: hidden; background: white; border: 1px solid var(--line); }
+.playground-thumbnail { aspect-ratio: 16 / 10; position: relative; display: grid; place-items: center; background: var(--purple-soft); border-bottom: 1px solid var(--line); }
+.playground-thumbnail img { object-fit: cover; }
+.playground-thumbnail > span { color: var(--purple); font-size: 11px; font-weight: 600; letter-spacing: .12em; text-align: center; }
+.playground-card-info { padding: 26px 28px 30px; }
+.playground-card-info > span:first-child { color: var(--purple); font-size: 10px; font-weight: 600; letter-spacing: .1em; }
+.playground-card-info h2 { margin: 8px 0; font-size: 26px; }
+.playground-card-info p { margin: 0 0 24px; color: var(--muted); }
+.playground-card-info a, .playground-link-disabled { display: inline-block; padding-bottom: 2px; border-bottom: 1px solid currentColor; font-size: 12px; }
+.playground-link-disabled { color: #aaa; }
 
 .report-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 34px 28px; }
 .report-card { overflow: hidden; background: white; border: 1px solid var(--line); transition: transform .2s; }
@@ -239,6 +251,9 @@ footer { padding: 62px 0 28px; overflow: hidden; border-top: 1px solid var(--lin
   .project-links .link-button { flex: 1; justify-content: center; }
   .project-detail-page { padding-top: 82px; }
   .playground-page { padding-top: 82px; }
+  .playground-content { padding-top: 56px; padding-bottom: 80px; }
+  .playground-intro { margin-bottom: 46px; }
+  .playground-grid { grid-template-columns: 1fr; }
   .project-detail-bar .container { width: calc(100% - 32px); }
   .project-detail { padding-top: 56px; }
   .project-detail-hero { padding-bottom: 48px; }
