@@ -225,8 +225,8 @@ footer { padding: 62px 0 28px; overflow: hidden; border-top: 1px solid var(--lin
 }
 
 @media (max-width: 700px) {
-  html { scroll-padding-top: 82px; }
-  main > section { scroll-margin-top: 82px; }
+  html { scroll-padding-top: 82px; scroll-snap-type: none; }
+  main > section { scroll-snap-align: none; scroll-margin-top: 82px; }
   .container, .nav-wrap, .section-heading .container { width: min(calc(100% - 32px), var(--max)); }
   .site-header { height: 82px; }
   .nav-links { top: 82px; }
