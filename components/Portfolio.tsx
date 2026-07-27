@@ -35,7 +35,7 @@ export function Portfolio() {
       <section className="hero">
         <span
           className="hero-texture"
-          style={{ backgroundImage: `url("${assetPath("/images/billie-holiday.png")}")` }}
+          style={{ backgroundImage: `url("${assetPath("/images/fresh-snow.png")}")` }}
           aria-hidden="true"
         />
         <div className="hero-folio" aria-hidden="true">PORTFOLIO · 2026</div>
