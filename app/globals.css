@@ -225,9 +225,10 @@ footer { padding: 62px 0 28px; overflow: hidden; border-top: 1px solid var(--lin
 }
 
 @media (max-width: 700px) {
-  html { scroll-behavior: auto; scroll-padding-top: 82px; scroll-snap-type: none; }
+  html { scroll-behavior: auto; scroll-padding-top: 82px; scroll-snap-type: y mandatory; }
   body { touch-action: pan-y; overscroll-behavior-y: auto; }
   main > section { scroll-snap-align: none; scroll-margin-top: 82px; }
+  .hero, .section-heading { scroll-snap-align: start; scroll-snap-stop: always; }
   .header-texture, .hero-texture { mix-blend-mode: normal; }
   .fade-in { animation-duration: .25s; }
   .container, .nav-wrap, .section-heading .container { width: min(calc(100% - 32px), var(--max)); }
