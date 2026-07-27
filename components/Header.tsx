@@ -6,8 +6,6 @@ import { MenuIcon } from "./Icons";
 const nav = [
   ["소개", "#about"],
   ["프로젝트", "#projects"],
-  ["문서", "#reports"],
-  ["웹사이트", "#websites"],
 ];
 
 export function Header() {

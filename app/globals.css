@@ -61,12 +61,12 @@ svg { width: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-l
 .study-value span { color: inherit; font: inherit; letter-spacing: inherit; white-space: nowrap; }
 .hero-folio, .scroll-cue { display: none; }
 
-.section { padding: 120px 0; }
-.section-heading { display: grid; grid-template-columns: 22% 1fr; margin-bottom: 64px; }
-.section-heading h2 { max-width: 820px; margin: 0; font-size: clamp(40px, 4.2vw, 54px); font-weight: 600; line-height: 1.08; letter-spacing: -1.6px; }
-.section-heading > div > p { max-width: 620px; margin: 18px 0 0; color: var(--muted); font-size: 16px; }
+.section { padding: 96px 0; border-top: 1px solid var(--line); }
+.section-heading { min-height: 48px; margin-bottom: 52px; padding: 10px 0; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--text); border-bottom: 1px solid var(--line); }
+.section-heading h2 { margin: 0; font-size: 18px; font-weight: 650; line-height: 1.2; letter-spacing: -.2px; }
+.section-heading > p { margin: 0; color: var(--muted); font-size: 12px; }
 .about { border-top: 1px solid var(--line); }
-.about-grid { margin-left: 22%; display: grid; grid-template-columns: 1fr 1fr; gap: 8%; padding-bottom: 58px; }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8%; padding-bottom: 58px; }
 .about p { margin: 0; }
 .about-lead { font-size: 24px; line-height: 1.45; letter-spacing: -.4px; }
 .about-lead strong { color: var(--purple); font-weight: 600; }
@@ -132,10 +132,10 @@ svg { width: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-l
 .website-info dd { margin: 5px 0 0; color: var(--muted); font-size: 13px; }
 .website-info .project-links { margin-top: 26px; }
 
-.contact { padding: 100px 0; }
-.contact-grid { padding: 62px; display: grid; grid-template-columns: 1.2fr .8fr; gap: 8%; align-items: end; background: var(--purple-soft); }
+.contact { padding: 96px 0; }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8%; align-items: start; }
+.contact-label p { margin: 0; font-size: clamp(24px, 3vw, 40px); font-weight: 600; letter-spacing: -1px; }
 .eyebrow.light { color: var(--purple); }
-.contact h2 { margin: 0; font-size: clamp(40px, 4.4vw, 58px); font-weight: 600; line-height: 1.06; letter-spacing: -1.5px; }
 .contact-right > p { margin: 0 0 26px; color: var(--muted); }
 .contact-links { border-top: 1px solid rgba(38,38,42,.12); }
 .contact-links a, .contact-links > span { min-height: 56px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(38,38,42,.12); font-size: 14px; }
@@ -160,8 +160,6 @@ footer { padding: 62px 0 28px; overflow: hidden; border-top: 1px solid var(--lin
   .nav-links a { padding: 13px 4px; border-bottom: 1px solid var(--line); }
   .hero-grid { grid-template-columns: 1fr .58fr; column-gap: 3%; }
   .hero-art { height: 440px; }
-  .section-heading { grid-template-columns: 1fr; gap: 10px; }
-  .section-heading .eyebrow { margin-bottom: 4px; }
   .about-grid { margin-left: 0; }
   .capability-row { grid-template-columns: repeat(3, 1fr); }
   .website-card { grid-template-columns: 1fr; }
@@ -191,8 +189,8 @@ footer { padding: 62px 0 28px; overflow: hidden; border-top: 1px solid var(--lin
   .profile-line { padding: 9px 14px; border-right: 0; border-bottom: 1px solid var(--line); }
   .profile-line:last-child { border-bottom: 0; }
   .section { padding: 84px 0; }
-  .section-heading { margin-bottom: 42px; }
-  .section-heading h2 { font-size: 37px; }
+  .section-heading { min-height: 44px; margin-bottom: 36px; }
+  .section-heading h2 { font-size: 17px; }
   .about-grid { padding-bottom: 44px; grid-template-columns: 1fr; gap: 28px; }
   .about-lead { font-size: 21px; }
   .capability-row { grid-template-columns: 1fr 1fr; }
@@ -206,9 +204,8 @@ footer { padding: 62px 0 28px; overflow: hidden; border-top: 1px solid var(--lin
   .website-shot { min-height: 250px; }
   .website-info { padding: 34px 21px; }
   .website-info h3 { font-size: 36px; }
-  .contact { padding: 50px 0; }
-  .contact-grid { padding: 42px 22px; }
-  .contact h2 { font-size: 37px; }
+  .contact { padding: 72px 0; }
+  .contact-grid { grid-template-columns: 1fr; gap: 36px; }
   .footer-masthead { font-size: 22vw; letter-spacing: -3px; }
   .footer-folio { flex-direction: column; gap: 6px; }
 }
