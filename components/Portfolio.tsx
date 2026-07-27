@@ -102,7 +102,6 @@ export function Portfolio() {
                 <Link className="project-card-link" href={`/projects/${project.id}`} aria-label={`${project.title} 상세 페이지 보기`}>
                   <div className="project-card-period">
                     <span>{project.period}</span>
-                    <span>{project.index}</span>
                   </div>
                   <div className="project-card-name">
                     <h3>{project.title}</h3>
