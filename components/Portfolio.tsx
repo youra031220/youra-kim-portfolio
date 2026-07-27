@@ -31,7 +31,7 @@ export function Portfolio() {
         <div className="hero-folio" aria-hidden="true">PORTFOLIO · 2026</div>
         <div className="container hero-grid">
           <FadeIn className="hero-copy">
-            <p className="hero-kicker">FINANCE · DATA · ARTIFICIAL INTELLIGENCE · SERVICE</p>
+            <p className="hero-kicker">BUSINESS · FINANCE · DATA · ARTIFICIAL INTELLIGENCE · SERVICE</p>
             <h1>금융 데이터를<br /><em>서비스와 전략</em>으로<br />연결합니다.</h1>
             <p className="hero-intro">
               금융 도메인 지식과 데이터·AI 활용 역량을 바탕으로<br className="desktop-only" />
@@ -48,7 +48,7 @@ export function Portfolio() {
             <p className="cover-quote">“From signal<br />to strategy.”</p>
             <div className="profile-line"><span>NAME</span><strong>{profile.nameKo} · {profile.nameEn}</strong></div>
             <div className="profile-line"><span>STUDY</span><strong>{profile.school}</strong></div>
-            <div className="profile-line"><span>FOCUS</span><strong>금융 디지털 · AI 전략 · 데이터 분석</strong></div>
+            <div className="profile-line"><span>FOCUS</span><strong>비즈니스 전략 · 금융 디지털 · AI 전략 · 데이터 분석</strong></div>
           </FadeIn>
         </div>
         <a className="scroll-cue" href="#about" aria-label="소개 섹션으로 이동"><span>CONTINUE READING</span><i /></a>
@@ -161,7 +161,7 @@ export function Portfolio() {
     </main>
     <footer>
       <div className="footer-masthead" aria-hidden="true">YOURZ</div>
-      <div className="container footer-folio"><span>© 2026 Youra Kim</span><span>FINANCE · DATA · AI · SERVICE</span></div>
+      <div className="container footer-folio"><span>© 2026 Youra Kim</span><span>BUSINESS · FINANCE · DATA · AI · SERVICE</span></div>
     </footer>
   </>;
 }

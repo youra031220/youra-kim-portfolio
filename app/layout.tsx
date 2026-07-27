@@ -3,9 +3,9 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://youra031220.github.io/youra-kim-portfolio/"),
-  title: "김유라 | 금융·데이터·AI 서비스 기획 포트폴리오",
+  title: "김유라 | 비즈니스·금융·데이터·AI 서비스 기획 포트폴리오",
   description:
-    "금융 도메인 지식과 데이터·AI 활용 역량으로 문제를 발견하고 서비스와 전략으로 구현하는 김유라의 포트폴리오입니다.",
+    "비즈니스와 금융 도메인 지식, 데이터·AI 활용 역량으로 문제를 발견하고 서비스와 전략으로 구현하는 김유라의 포트폴리오입니다.",
   openGraph: {
     title: "김유라 | Youra Kim Portfolio",
     description: "금융 데이터를 서비스와 전략으로 연결합니다.",

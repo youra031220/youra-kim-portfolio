@@ -31,6 +31,7 @@ export const profile = {
 };
 
 export const capabilities = [
+  "비즈니스·상품 전략",
   "금융 데이터 분석",
   "AI Agent 기획·개발",
   "서비스기획",
