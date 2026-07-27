@@ -236,15 +236,7 @@ footer { padding: 88px 0 28px; overflow: hidden; background: linear-gradient(180
   width: 70px; height: 22px; border-color: var(--primary); border-radius: 50%; transform: rotate(9deg);
 }
 
-[data-theme="play"] .theme-decor span {
-  width: 82px; height: 45px; border: 2px solid var(--primary); border-radius: 50%;
-  opacity: .34; transform: rotate(-16deg);
-}
-[data-theme="play"] .theme-decor span:nth-child(2) { width: 58px; height: 58px; border-color: var(--highlight); background: color-mix(in srgb, var(--highlight) 18%, transparent); transform: rotate(18deg); }
-[data-theme="play"] .theme-decor span:nth-child(3) { width: 95px; height: 38px; border-color: var(--pink); transform: rotate(27deg); }
-[data-theme="play"] .theme-decor span:nth-child(4) { width: 68px; height: 92px; border-color: var(--plum); border-radius: 64% 36% 58% 42%; transform: rotate(-28deg); }
-[data-theme="play"] .theme-decor span:nth-child(5) { width: 48px; height: 48px; border-color: var(--accent); background: color-mix(in srgb, var(--accent) 12%, transparent); transform: rotate(12deg); }
-[data-theme="play"] .theme-decor span:nth-child(6) { width: 110px; height: 30px; border-color: var(--secondary); transform: rotate(-8deg); }
+[data-theme="play"] .theme-decor { display: none; }
 
 body, .site-header, .theme-toggle, .button, .link-button, .project-card, .report-card, .website-card, .capability-row span, .contact-grid, footer {
   transition: color .35s ease, background-color .35s ease, border-color .35s ease, box-shadow .35s ease;
