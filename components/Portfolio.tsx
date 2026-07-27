@@ -33,19 +33,17 @@ export function Portfolio() {
     <Header />
     <main id="top">
       <section className="hero">
-        <div className="hero-folio" aria-hidden="true">PORTFOLIO · 2026</div>
         <div className="container hero-grid">
           <FadeIn className="hero-copy">
-            <p className="hero-kicker">BUSINESS · FINANCE · DATA · ARTIFICIAL INTELLIGENCE · SERVICE</p>
-            <h1>금융 데이터를<br /><em>서비스와 전략</em>으로<br />연결합니다.</h1>
-            <p className="hero-intro">
-              금융 도메인 지식과 데이터·AI 활용 역량을 바탕으로<br className="desktop-only" />
-              {" "}문제를 발견하고 실제 서비스와 전략으로 구현하는 기획자입니다.
-            </p>
+            <h1>안녕하세요, <em>김유라</em>입니다.</h1>
+            <p className="hero-subheadline">데이터와 AI로 문제를 이해하고,<br />서비스와 전략으로 연결하는 기획자.</p>
+            <div className="hero-description">
+              <p>서강대학교 경영학 · 아트&테크놀로지</p>
+              <p>비즈니스 전략, 금융 디지털, AI 서비스 기획과 데이터 분석을 중심으로<br className="desktop-only" />
+                문제를 정의하고 서비스를 구현하는 프로젝트를 진행하고 있습니다.</p>
+            </div>
             <div className="hero-actions">
               <a className="button primary" href="#projects">프로젝트 보기<ArrowDown /></a>
-              {profile.resume ? <a className="button secondary" href={profile.resume} download>이력서 다운로드</a> :
-                <span className="button secondary disabled" aria-disabled="true">이력서 추가 예정</span>}
             </div>
           </FadeIn>
           <FadeIn className="hero-art" delay={100}>
@@ -57,21 +55,10 @@ export function Portfolio() {
               sizes="(max-width: 700px) 70vw, 34vw"
             />
           </FadeIn>
-          <FadeIn className="hero-profile" delay={120}>
-            <div className="cover-line" aria-hidden="true"><span>Y</span><i /></div>
-            <p className="cover-quote">“From signal<br />to strategy.”</p>
-            <div className="profile-line"><span>NAME</span><strong>{profile.nameKo} · {profile.nameEn}</strong></div>
-            <div className="profile-line">
-              <span>STUDY</span>
-              <strong className="study-value">
-                <span>{profile.university}</span>
-                <span>{profile.majors}</span>
-              </strong>
-            </div>
-            <div className="profile-line"><span>FOCUS</span><strong>비즈니스 전략 · 금융 디지털 · AI 전략 · 데이터 분석</strong></div>
-          </FadeIn>
         </div>
-        <a className="scroll-cue" href="#about" aria-label="소개 섹션으로 이동"><span>CONTINUE READING</span><i /></a>
+        <a className="dive-button" href="#about" aria-label="About 섹션으로 이동">
+          <span>Dive in</span><ArrowDown />
+        </a>
       </section>
 
       <section
