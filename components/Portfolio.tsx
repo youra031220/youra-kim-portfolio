@@ -36,7 +36,7 @@ export function Portfolio() {
         <div className="container hero-grid">
           <FadeIn className="hero-copy">
             <h1>안녕하세요, <em>김유라</em>입니다.</h1>
-            <p className="hero-subheadline">데이터와 AI로 문제를 이해하고,<br />서비스와 해결책으로 연결하는 창의적 전략가</p>
+            <p className="hero-subheadline">데이터와 AI로 문제를 이해하고,<br />서비스와 해결책으로 연결하는 <span>창의적 전략가</span></p>
             <div className="hero-description">
               <p>서강대학교 경영학 · 아트&테크놀로지</p>
               <p>비즈니스 전략, 금융 디지털, AI 서비스 기획과 데이터 분석을 중심으로<br className="desktop-only" />
