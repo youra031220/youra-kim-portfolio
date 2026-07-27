@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import { profile, projects, skillGroups } from "@/data/portfolio";
 import { Header } from "./Header";
 import { LinkButton } from "./LinkButton";
@@ -21,6 +22,7 @@ function SectionTitle({ title, copy }: { title: string; copy?: string }) {
 }
 
 export function Portfolio() {
+  const [selectedSkills, setSelectedSkills] = useState<string[]>([]);
   const contactLinks = [
     { label: "Email", href: profile.email ? `mailto:${profile.email}` : "" },
     { label: "GitHub", href: profile.github },
@@ -92,7 +94,24 @@ export function Portfolio() {
               <div className="skill-group" key={group.title}>
                 <h3>{group.title}</h3>
                 <div className="skill-tags">
-                  {group.items.map(item => <span key={item}>{item}</span>)}
+                  {group.items.map(item => {
+                    const selected = selectedSkills.includes(item);
+                    return (
+                      <button
+                        type="button"
+                        className={selected ? "is-selected" : ""}
+                        aria-pressed={selected}
+                        key={item}
+                        onClick={() => setSelectedSkills(current =>
+                          current.includes(item)
+                            ? current.filter(skill => skill !== item)
+                            : [...current, item]
+                        )}
+                      >
+                        {item}
+                      </button>
+                    );
+                  })}
                 </div>
               </div>
             ))}
