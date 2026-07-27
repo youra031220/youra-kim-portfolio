@@ -61,8 +61,9 @@ svg { width: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-l
 .study-value span { color: inherit; font: inherit; letter-spacing: inherit; white-space: nowrap; }
 .hero-folio, .scroll-cue { display: none; }
 
-.section { padding: 96px 0; border-top: 1px solid var(--line); }
-.section-heading { min-height: 48px; margin-bottom: 52px; padding: 10px 0; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--text); border-bottom: 1px solid var(--line); }
+.section { padding: 0 0 96px; }
+.section-heading { width: 100%; min-height: 48px; margin-bottom: 52px; border-top: 1px solid var(--text); border-bottom: 1px solid var(--text); }
+.section-heading-inner { min-height: 48px; padding-top: 10px; padding-bottom: 10px; display: flex; align-items: center; justify-content: space-between; }
 .section-heading h2 { margin: 0; font-size: 18px; font-weight: 650; line-height: 1.2; letter-spacing: -.2px; }
 .section-heading > p { margin: 0; color: var(--muted); font-size: 12px; }
 .about { border-top: 1px solid var(--line); }
@@ -132,7 +133,7 @@ svg { width: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-l
 .website-info dd { margin: 5px 0 0; color: var(--muted); font-size: 13px; }
 .website-info .project-links { margin-top: 26px; }
 
-.contact { padding: 96px 0; }
+.contact { padding-bottom: 96px; }
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8%; align-items: start; }
 .contact-label p { margin: 0; font-size: clamp(24px, 3vw, 40px); font-weight: 600; letter-spacing: -1px; }
 .eyebrow.light { color: var(--purple); }
@@ -188,8 +189,9 @@ footer { padding: 62px 0 28px; overflow: hidden; border-top: 1px solid var(--lin
   .cover-line span { font-size: 38px; }
   .profile-line { padding: 9px 14px; border-right: 0; border-bottom: 1px solid var(--line); }
   .profile-line:last-child { border-bottom: 0; }
-  .section { padding: 84px 0; }
+  .section { padding-bottom: 84px; }
   .section-heading { min-height: 44px; margin-bottom: 36px; }
+  .section-heading-inner { min-height: 44px; }
   .section-heading h2 { font-size: 17px; }
   .about-grid { padding-bottom: 44px; grid-template-columns: 1fr; gap: 28px; }
   .about-lead { font-size: 21px; }
@@ -204,7 +206,7 @@ footer { padding: 62px 0 28px; overflow: hidden; border-top: 1px solid var(--lin
   .website-shot { min-height: 250px; }
   .website-info { padding: 34px 21px; }
   .website-info h3 { font-size: 36px; }
-  .contact { padding: 72px 0; }
+  .contact { padding-bottom: 72px; }
   .contact-grid { grid-template-columns: 1fr; gap: 36px; }
   .footer-masthead { font-size: 22vw; letter-spacing: -3px; }
   .footer-folio { flex-direction: column; gap: 6px; }

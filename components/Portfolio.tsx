@@ -12,8 +12,10 @@ const assetPath = (path: string) =>
 
 function SectionTitle({ title, copy }: { title: string; copy?: string }) {
   return <div className="section-heading">
-    <h2>{title}</h2>
-    {copy && <p>{copy}</p>}
+    <div className="container section-heading-inner">
+      <h2>{title}</h2>
+      {copy && <p>{copy}</p>}
+    </div>
   </div>;
 }
 
@@ -70,8 +72,8 @@ export function Portfolio() {
       </section>
 
       <section id="about" className="section about">
+        <SectionTitle title="About" />
         <div className="container">
-          <SectionTitle title="About" />
           <div className="about-grid">
             <FadeIn className="about-lead"><p>경영학과 아트&테크놀로지를 복수전공하며 <strong>금융, 데이터 분석, AI, 서비스기획</strong>을 함께 공부했습니다.</p></FadeIn>
             <FadeIn className="about-detail" delay={80}>
@@ -86,8 +88,8 @@ export function Portfolio() {
       </section>
 
       <section id="projects" className="section projects">
+        <SectionTitle title="Featured Projects" />
         <div className="container">
-          <SectionTitle title="Featured Projects" />
           <div className="project-list">
             {projects.map((project, i) => (
               <FadeIn key={project.id} className="project-card" delay={Math.min(i * 50, 150)}>
@@ -118,8 +120,8 @@ export function Portfolio() {
       </section>
 
       <section id="contact" className="section contact">
+        <SectionTitle title="Contact" />
         <div className="container">
-          <SectionTitle title="Contact" />
           <div className="contact-grid">
           <div className="contact-label"><p>프로젝트 및 협업 문의</p></div>
           <div className="contact-right"><p>편하게 연락해 주세요.</p>
