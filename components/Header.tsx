@@ -8,9 +8,22 @@ const nav = [
   ["Projects", "#projects"],
 ];
 
-export function Header() {
+type Language = "KOR" | "EN";
+
+export function Header({
+  language: controlledLanguage,
+  onLanguageChange,
+}: {
+  language?: Language;
+  onLanguageChange?: (language: Language) => void;
+}) {
   const [open, setOpen] = useState(false);
-  const [language, setLanguage] = useState<"KOR" | "EN">("KOR");
+  const [internalLanguage, setInternalLanguage] = useState<Language>("KOR");
+  const language = controlledLanguage ?? internalLanguage;
+  const changeLanguage = (nextLanguage: Language) => {
+    setInternalLanguage(nextLanguage);
+    onLanguageChange?.(nextLanguage);
+  };
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
   const texturePath = `${basePath}/images/45-degree-fabric-dark.png`;
   return (
@@ -26,7 +39,7 @@ export function Header() {
           <a href={`${basePath}/#contact`} onClick={() => setOpen(false)}>연락처</a>
           <div className="language-toggle mobile-language" aria-label="언어 선택">
             {(["KOR", "EN"] as const).map(item => (
-              <button type="button" className={language === item ? "active" : ""} aria-pressed={language === item} key={item} onClick={() => setLanguage(item)}>{item}</button>
+              <button type="button" className={language === item ? "active" : ""} aria-pressed={language === item} key={item} onClick={() => changeLanguage(item)}>{item}</button>
             ))}
           </div>
         </nav>
@@ -36,7 +49,7 @@ export function Header() {
         </nav>
         <div className="language-toggle" aria-label="언어 선택">
           {(["KOR", "EN"] as const).map(item => (
-            <button type="button" className={language === item ? "active" : ""} aria-pressed={language === item} key={item} onClick={() => setLanguage(item)}>{item}</button>
+            <button type="button" className={language === item ? "active" : ""} aria-pressed={language === item} key={item} onClick={() => changeLanguage(item)}>{item}</button>
           ))}
         </div>
         <button className="menu-button" type="button" aria-label={open ? "메뉴 닫기" : "메뉴 열기"} aria-expanded={open} onClick={() => setOpen(!open)}>
