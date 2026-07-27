@@ -25,6 +25,7 @@ svg { width: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-l
 .container { width: min(calc(100% - 80px), var(--max)); margin: 0 auto; }
 
 .site-header { position: fixed; inset: 0 0 auto; z-index: 50; height: 96px; background: #59c2f9; border-bottom: 1px solid rgba(0,0,0,.18); }
+.header-texture { position: absolute; inset: 0; pointer-events: none; background-repeat: repeat; background-size: 180px 180px; opacity: .72; mix-blend-mode: multiply; }
 .nav-wrap { width: min(calc(100% - 80px), var(--max)); height: 100%; margin: auto; position: relative; z-index: 1; display: flex; align-items: center; gap: 34px; }
 .wordmark { margin-right: auto; color: #000; font-family: "Ribeye", serif; font-size: 54px; font-weight: 400; line-height: 1; letter-spacing: 0; }
 .nav-group { display: flex; align-items: center; gap: 30px; }

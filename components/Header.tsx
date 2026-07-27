@@ -12,8 +12,10 @@ const nav = [
 
 export function Header() {
   const [open, setOpen] = useState(false);
+  const texturePath = `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/images/45-degree-fabric-dark.png`;
   return (
     <header className="site-header">
+      <span className="header-texture" style={{ backgroundImage: `url("${texturePath}")` }} aria-hidden="true" />
       <div className="nav-wrap">
         <a className="wordmark" href="#top" aria-label="김유라 포트폴리오 홈">YOURZ</a>
         <nav className={open ? "nav-links open" : "nav-links"} aria-label="주요 메뉴">
