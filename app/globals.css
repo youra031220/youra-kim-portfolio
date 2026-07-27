@@ -17,8 +17,9 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 96px; }
+html { scroll-behavior: smooth; scroll-padding-top: 96px; scroll-snap-type: y proximity; }
 body { margin: 0; overflow-x: hidden; background: var(--background); color: var(--text); font-family: var(--font); line-height: 1.55; word-break: keep-all; overflow-wrap: break-word; -webkit-font-smoothing: antialiased; }
+main > section { scroll-snap-align: start; scroll-margin-top: 96px; }
 a { color: inherit; text-decoration: none; }
 button { color: inherit; font: inherit; }
 svg { width: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
@@ -196,7 +197,7 @@ footer { padding: 62px 0 28px; overflow: hidden; border-top: 1px solid var(--lin
 .fade-in { animation: fade-up .6s ease both; }
 @keyframes fade-up { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
 *:focus-visible { outline: 2px solid var(--purple); outline-offset: 3px; }
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .fade-in { animation: none; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; scroll-snap-type: none; } .fade-in { animation: none; } }
 @media (prefers-reduced-motion: reduce) { .project-card { transition-duration: .01ms; } .project-card:hover { rotate: 0deg; } }
 
 @media (max-width: 980px) {
@@ -218,6 +219,8 @@ footer { padding: 62px 0 28px; overflow: hidden; border-top: 1px solid var(--lin
 }
 
 @media (max-width: 700px) {
+  html { scroll-padding-top: 82px; }
+  main > section { scroll-margin-top: 82px; }
   .container, .nav-wrap, .section-heading .container { width: min(calc(100% - 32px), var(--max)); }
   .site-header { height: 82px; }
   .nav-links { top: 82px; }
