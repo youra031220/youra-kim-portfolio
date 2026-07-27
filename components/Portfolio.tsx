@@ -50,8 +50,7 @@ export function Portfolio() {
                 financial enthusiast, data explorer,<br />
                 AI learner, and someone who enjoys turning<br className="desktop-only" />
                 ideas into real products.</p>
-              <p className="hero-en-study">currently studying Business Administration<br />
-                and Art &amp; Technology @ Sogang University.</p>
+              <p className="hero-en-study">currently studying Business Administration and Art &amp; Technology @ Sogang University.</p>
             </>}
             <div className="hero-actions">
               <a className="button primary" href="#projects">{language === "KOR" ? "프로젝트 보기" : "View projects"}<ArrowDown /></a>
