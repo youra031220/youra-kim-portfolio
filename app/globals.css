@@ -1,5 +1,6 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
 @import url("https://fonts.googleapis.com/css2?family=Ribeye&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@400;500;600&display=swap");
 
 :root {
   --background: #fbfbfb;
@@ -82,7 +83,7 @@ svg { width: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-l
 .skill-group { min-height: 190px; padding: 38px 0; display: grid; grid-template-columns: 18% 1fr; gap: 4%; align-items: center; }
 .skill-group h3 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: 28px; font-weight: 600; }
 .skill-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px 17px; }
-.skill-tags button { padding: 13px 18px; color: #171717; background: #fff; border: 3px solid #171717; border-radius: 0; font-family: "Ribeye", serif; font-size: 16px; line-height: 1.25; white-space: nowrap; cursor: pointer; transition: transform .2s ease, color .2s ease, background-color .2s ease; }
+.skill-tags button { padding: 13px 18px; color: #171717; background: #fff; border: 3px solid #171717; border-radius: 0; font-family: "Playpen Sans", cursive; font-size: 16px; line-height: 1.25; white-space: nowrap; cursor: pointer; transition: transform .2s ease, color .2s ease, background-color .2s ease; }
 .skill-tags button:hover { transform: translateY(-3px) rotate(1.5deg); }
 .skill-tags button:nth-child(even):hover { transform: translateY(-3px) rotate(-1.5deg); }
 .skill-tags button.is-selected { color: #fff; background: #171717; transform: rotate(-1deg); }
