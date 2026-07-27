@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useState } from "react";
 import { capabilities, profile, projects } from "@/data/portfolio";
 import { Header } from "./Header";
 import { LinkButton } from "./LinkButton";
@@ -20,6 +21,7 @@ function SectionTitle({ title, copy }: { title: string; copy?: string }) {
 }
 
 export function Portfolio() {
+  const [flippedProject, setFlippedProject] = useState<string | null>(null);
   const contactLinks = [
     { label: "Email", href: profile.email ? `mailto:${profile.email}` : "" },
     { label: "GitHub", href: profile.github },
@@ -92,26 +94,49 @@ export function Portfolio() {
         <div className="container">
           <div className="project-list">
             {projects.map((project, i) => (
-              <FadeIn key={project.id} className="project-card" delay={Math.min(i * 50, 150)}>
-                <div className="project-top">
-                  <span className="project-index">{project.index}</span>
-                  <div className="project-title"><p>{project.subtitle}</p><h3>{project.title}</h3></div>
-                  <div className="achievement"><span>KEY OUTCOME</span><strong>{project.achievement}</strong></div>
-                </div>
-                <div className="project-body">
-                  <div className="project-meta">
-                    <div><span>PERIOD</span><p>{project.period}</p></div>
-                    <div><span>ROLE</span><p>{project.role}</p></div>
-                  </div>
-                  <div className="project-story">
-                    <div><span>PROBLEM</span><p>{project.problem}</p></div>
-                    <div><span>WHAT I DID</span><ul>{project.actions.map(action => <li key={action}>{action}</li>)}</ul></div>
-                    <div className="result"><span>RESULT</span><p>{project.result}</p></div>
-                  </div>
-                </div>
-                <div className="project-footer">
-                  <div className="tags">{project.tags.map(tag => <span key={tag}>{tag}</span>)}</div>
-                  <div className="project-links">{project.links.map(link => <LinkButton key={link.label} item={link} />)}</div>
+              <FadeIn
+                key={project.id}
+                className={`project-card${flippedProject === project.id ? " is-flipped" : ""}`}
+                delay={Math.min(i * 50, 150)}
+              >
+                <div className="project-card-inner">
+                  <article className="project-face project-front">
+                    <div className="project-top">
+                      <span className="project-index">{project.index}</span>
+                      <div className="project-title"><p>{project.subtitle}</p><h3>{project.title}</h3></div>
+                      <div className="achievement"><span>KEY OUTCOME</span><strong>{project.achievement}</strong></div>
+                    </div>
+                    <div className="project-front-footer">
+                      <div className="tags">{project.tags.map(tag => <span key={tag}>{tag}</span>)}</div>
+                      <button type="button" onClick={() => setFlippedProject(project.id)} aria-label={`${project.title} 상세 내용 보기`}>
+                        자세히 보기 <ArrowUpRight />
+                      </button>
+                    </div>
+                  </article>
+
+                  <article className="project-face project-back">
+                    <button className="flip-back-button" type="button" onClick={() => setFlippedProject(null)} aria-label={`${project.title} 앞면으로 돌아가기`}>
+                      앞면 보기
+                    </button>
+                    <div className="project-back-title">
+                      <span>{project.index} · PROJECT DETAIL</span>
+                      <h3>{project.title}</h3>
+                    </div>
+                    <div className="project-body">
+                      <div className="project-meta">
+                        <div><span>PERIOD</span><p>{project.period}</p></div>
+                        <div><span>ROLE</span><p>{project.role}</p></div>
+                      </div>
+                      <div className="project-story">
+                        <div><span>PROBLEM</span><p>{project.problem}</p></div>
+                        <div><span>WHAT I DID</span><ul>{project.actions.map(action => <li key={action}>{action}</li>)}</ul></div>
+                        <div className="result"><span>RESULT</span><p>{project.result}</p></div>
+                      </div>
+                    </div>
+                    <div className="project-footer">
+                      <div className="project-links">{project.links.map(link => <LinkButton key={link.label} item={link} />)}</div>
+                    </div>
+                  </article>
                 </div>
               </FadeIn>
             ))}
