@@ -118,7 +118,11 @@ export function Portfolio() {
         </div>
       </section>
 
-      <section id="projects" className="section projects">
+      <section
+        id="projects"
+        className="section projects"
+        style={{ backgroundImage: `url("${assetPath("/images/low-contrast-linen.png")}")` }}
+      >
         <SectionTitle title="Featured Projects" />
         <div className="container">
           <div className="project-list">
