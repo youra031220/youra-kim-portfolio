@@ -43,6 +43,70 @@ export const capabilities = [
   "Node.js",
 ];
 
+export const skillGroups = [
+  {
+    title: "Methods",
+    items: [
+      "Service Planning",
+      "Business Strategy",
+      "Market Research",
+      "User Journey Mapping",
+      "Wireframing",
+      "Prototyping",
+      "EDA",
+      "Data Visualization",
+      "Topic Modeling",
+      "Monte Carlo Simulation",
+      "Financial Modeling",
+      "AI Agent Design",
+      "Prompt Engineering",
+    ],
+  },
+  {
+    title: "Tools",
+    items: [
+      "Figma",
+      "Adobe Illustrator",
+      "Microsoft Office",
+      "Google Workspace",
+      "Google Colab",
+      "Jupyter Notebook",
+      "VS Code",
+      "GitHub",
+      "Notion",
+      "Slack",
+      "Overleaf",
+      "ModelRisk",
+      "FnGuide",
+      "Canva",
+      "Procreate",
+      "LLMs",
+    ],
+  },
+  {
+    title: "Technical",
+    items: [
+      "Python",
+      "SQL",
+      "JavaScript",
+      "HTML/CSS",
+      "React",
+      "Vite",
+      "Node.js",
+      "Express.js",
+      "Git",
+      "APIs",
+      "Web Scraping",
+      "Data Preprocessing",
+      "ML&DL",
+      "Natural Language Processing",
+      "Computer Vision",
+      "Explainable AI",
+      "Responsive Web Design",
+    ],
+  },
+];
+
 export const projects: Project[] = [
   {
     id: "kodex",

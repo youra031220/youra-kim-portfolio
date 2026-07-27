@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { capabilities, profile, projects } from "@/data/portfolio";
+import { profile, projects, skillGroups } from "@/data/portfolio";
 import { Header } from "./Header";
 import { LinkButton } from "./LinkButton";
 import { FadeIn } from "./FadeIn";
@@ -87,8 +87,15 @@ export function Portfolio() {
               <p>분석의 논리와 기획의 언어, 구현의 현실성을 함께 이해하며 아이디어를 프로토타입과 전략으로 끝까지 구체화할 수 있습니다.</p>
             </FadeIn>
           </div>
-          <FadeIn className="capability-row">
-            {capabilities.map((item, i) => <span key={item}><b>{String(i + 1).padStart(2, "0")}</b>{item}</span>)}
+          <FadeIn className="skills-matrix">
+            {skillGroups.map(group => (
+              <div className="skill-group" key={group.title}>
+                <h3>{group.title}</h3>
+                <div className="skill-tags">
+                  {group.items.map(item => <span key={item}>{item}</span>)}
+                </div>
+              </div>
+            ))}
           </FadeIn>
         </div>
       </section>
