@@ -23,7 +23,8 @@ export type Project = {
 export const profile = {
   nameKo: "김유라",
   nameEn: "Youra Kim",
-  school: "서강대학교 경영학 · 아트&테크놀로지",
+  university: "서강대학교",
+  majors: "경영학 · 아트&테크놀로지",
   email: "", // 예: hello@example.com
   github: "", // 예: https://github.com/username
   linkedin: "", // 예: https://linkedin.com/in/username

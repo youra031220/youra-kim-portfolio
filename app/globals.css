@@ -121,6 +121,8 @@ svg { width: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-l
 .profile-line:last-child { border-right: 0; }
 .profile-line span { color: var(--ink-40); font-size: 9px; font-weight: 600; letter-spacing: .12em; }
 .profile-line strong { color: var(--ink-83); font-size: 12px; font-weight: 400; line-height: 1.5; }
+.study-value { display: flex; flex-direction: column; }
+.study-value span { color: inherit; font: inherit; letter-spacing: inherit; white-space: nowrap; }
 .hero-folio, .scroll-cue { display: none; }
 
 .section { padding: 128px 0; position: relative; overflow: hidden; }

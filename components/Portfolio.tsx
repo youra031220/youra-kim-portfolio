@@ -47,7 +47,13 @@ export function Portfolio() {
             <div className="cover-line" aria-hidden="true"><span>Y</span><i /></div>
             <p className="cover-quote">“From signal<br />to strategy.”</p>
             <div className="profile-line"><span>NAME</span><strong>{profile.nameKo} · {profile.nameEn}</strong></div>
-            <div className="profile-line"><span>STUDY</span><strong>{profile.school}</strong></div>
+            <div className="profile-line">
+              <span>STUDY</span>
+              <strong className="study-value">
+                <span>{profile.university}</span>
+                <span>{profile.majors}</span>
+              </strong>
+            </div>
             <div className="profile-line"><span>FOCUS</span><strong>비즈니스 전략 · 금융 디지털 · AI 전략 · 데이터 분석</strong></div>
           </FadeIn>
         </div>
