@@ -26,7 +26,7 @@ svg { width: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-l
 
 .site-header { position: fixed; inset: 0 0 auto; z-index: 50; height: 76px; background: rgba(251,251,251,.9); backdrop-filter: blur(16px); border-bottom: 1px solid rgba(38,38,42,.04); }
 .nav-wrap { width: min(calc(100% - 80px), var(--max)); height: 100%; margin: auto; display: flex; align-items: center; gap: 34px; }
-.wordmark { margin-right: auto; color: var(--purple); font-family: "Rubik Puddles", cursive; font-size: 36px; font-weight: 400; line-height: 1; letter-spacing: 0; }
+.wordmark { margin-right: auto; color: var(--purple); font-family: "Rubik Puddles", cursive; font-size: 44px; font-weight: 400; line-height: 1; letter-spacing: 0; }
 .nav-group { display: flex; align-items: center; gap: 30px; }
 .nav-group a, .nav-links a { color: var(--muted); font-size: 14px; font-weight: 500; }
 .nav-group a:hover { color: var(--purple); }
@@ -172,7 +172,7 @@ footer { padding: 62px 0 28px; overflow: hidden; border-top: 1px solid var(--lin
   .container, .nav-wrap { width: min(calc(100% - 32px), var(--max)); }
   .site-header { height: 68px; }
   .nav-links { top: 68px; }
-  .wordmark { font-size: 31px; }
+  .wordmark { font-size: 38px; }
   .menu-button { position: absolute; right: 12px; width: 40px; height: 40px; }
   .hero { min-height: 0; padding: 108px 0 64px; }
   .hero-grid { min-height: 0; grid-template-columns: 1fr; grid-template-rows: auto auto auto; }
