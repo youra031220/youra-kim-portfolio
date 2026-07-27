@@ -69,7 +69,7 @@ svg { width: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-l
 .section-heading-inner { min-height: 48px; padding-top: 10px; padding-bottom: 10px; display: flex; align-items: center; justify-content: space-between; }
 .section-heading h2 { margin: 0; font-size: 18px; font-weight: 650; line-height: 1.2; letter-spacing: -.2px; }
 .section-heading > p { margin: 0; color: var(--muted); font-size: 12px; }
-.about { border-top: 1px solid var(--line); }
+.about { min-height: 100svh; border-top: 1px solid var(--line); }
 .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8%; padding-bottom: 58px; }
 .about p { margin: 0; }
 .about-lead { font-size: 24px; line-height: 1.45; letter-spacing: -.4px; }
