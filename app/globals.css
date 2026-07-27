@@ -77,12 +77,11 @@ svg { width: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-l
 .about-lead strong { color: var(--purple); font-weight: 600; }
 .about-detail { color: var(--muted); font-size: 16px; }
 .about-detail p + p { margin-top: 20px; }
-.skills-matrix { padding-top: 54px; border-top: 1px solid var(--line); }
-.skill-group { min-height: 150px; padding: 30px 0; display: grid; grid-template-columns: 18% 1fr; gap: 4%; align-items: center; }
-.skill-group + .skill-group { border-top: 1px solid var(--line); }
-.skill-group h3 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: 22px; font-weight: 600; }
-.skill-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 12px; }
-.skill-tags span { padding: 7px 10px; color: #171717; background: transparent; border: 1px solid #171717; font-family: ui-monospace, "SFMono-Regular", Menlo, monospace; font-size: 12px; line-height: 1.2; white-space: nowrap; }
+.skills-matrix { padding-top: 58px; }
+.skill-group { min-height: 190px; padding: 38px 0; display: grid; grid-template-columns: 18% 1fr; gap: 4%; align-items: center; }
+.skill-group h3 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: 25px; font-weight: 600; }
+.skill-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 13px 15px; }
+.skill-tags span { padding: 10px 14px; color: #171717; background: transparent; border: 1px solid #171717; font-family: ui-monospace, "SFMono-Regular", Menlo, monospace; font-size: 14px; line-height: 1.25; white-space: nowrap; }
 
 .projects { background: #f8f8f7; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .project-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 34px 28px; }
@@ -250,10 +249,11 @@ footer { padding: 62px 0 28px; overflow: hidden; border-top: 1px solid var(--lin
   .section-heading h2 { font-size: 17px; }
   .about-grid { padding-bottom: 44px; grid-template-columns: 1fr; gap: 28px; }
   .about-lead { font-size: 21px; }
-  .skills-matrix { padding-top: 28px; }
-  .skill-group { padding: 28px 0; grid-template-columns: 1fr; gap: 20px; align-items: start; }
-  .skill-tags { justify-content: flex-start; gap: 8px; }
-  .skill-tags span { font-size: 11px; white-space: normal; }
+  .skills-matrix { padding-top: 34px; }
+  .skill-group { min-height: 0; padding: 34px 0; grid-template-columns: 1fr; gap: 22px; align-items: start; }
+  .skill-group h3 { font-size: 23px; }
+  .skill-tags { justify-content: flex-start; gap: 10px; }
+  .skill-tags span { padding: 9px 12px; font-size: 13px; white-space: normal; }
   .project-list, .report-grid { grid-template-columns: 1fr; }
   .project-card-name { min-height: 96px; }
   .project-card-bottom { align-items: flex-start; flex-direction: column; }
