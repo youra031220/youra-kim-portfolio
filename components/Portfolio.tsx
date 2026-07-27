@@ -25,6 +25,9 @@ export function Portfolio() {
     <Header />
     <main id="top">
       <section className="hero">
+        <div className="theme-decor hero-decor" aria-hidden="true">
+          <span /><span /><span /><span /><span /><span />
+        </div>
         <div className="hero-folio" aria-hidden="true">PORTFOLIO · 2026</div>
         <div className="container hero-grid">
           <FadeIn className="hero-copy">
@@ -52,6 +55,7 @@ export function Portfolio() {
       </section>
 
       <section id="about" className="section about">
+        <div className="theme-decor section-decor" aria-hidden="true"><span /><span /><span /></div>
         <div className="container">
           <SectionTitle eyebrow="01 · ABOUT" title="복잡한 문제를 발견하고, 실행 가능한 답으로 만듭니다." />
           <div className="about-grid">
@@ -68,6 +72,7 @@ export function Portfolio() {
       </section>
 
       <section id="projects" className="section projects">
+        <div className="theme-decor projects-decor" aria-hidden="true"><span /><span /><span /></div>
         <div className="container">
           <SectionTitle eyebrow="02 · FEATURED PROJECTS" title="데이터를 읽고, 기회를 설계한 프로젝트" copy="핵심 성과와 문제 해결 과정을 중심으로 정리했습니다." />
           <div className="project-list">
@@ -155,7 +160,7 @@ export function Portfolio() {
       </section>
     </main>
     <footer>
-      <div className="footer-masthead" aria-hidden="true">YOURA KIM</div>
+      <div className="footer-masthead" aria-hidden="true">YOURZ</div>
       <div className="container footer-folio"><span>© 2026 Youra Kim</span><span>FINANCE · DATA · AI · SERVICE</span></div>
     </footer>
   </>;

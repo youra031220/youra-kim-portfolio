@@ -55,7 +55,18 @@ npm run dev
 
 ## 디자인 수정
 
-색상, 간격, 반응형 기준은 `app/globals.css`에서 관리합니다. 핵심 색상은 파일 상단의 CSS 변수 `--navy`, `--blue`, `--mint`입니다.
+색상, 간격, 반응형 기준은 `app/globals.css`에서 관리합니다.
+
+### ROMANCE / PLAY 테마
+
+두 테마는 `app/globals.css` 상단의 `[data-theme="romance"]`, `[data-theme="play"]` CSS 변수로 관리합니다. 레이아웃과 컴포넌트 크기는 공유하고 색상과 장식만 변경됩니다.
+
+- 전환 UI: `components/ThemeToggle.tsx`
+- 초기 테마 적용 스크립트: `app/layout.tsx`
+- 기본 테마: `ROMANCE`
+- 저장 키: `youra-portfolio-theme`
+
+색상을 수정할 때는 개별 카드의 CSS를 변경하지 말고 `--background`, `--surface`, `--text`, `--primary`, `--accent`, `--secondary`, `--border` 등의 테마 토큰을 수정하세요.
 
 ## SEO
 
