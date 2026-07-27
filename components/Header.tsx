@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { MenuIcon } from "./Icons";
-import { ThemeToggle } from "./ThemeToggle";
 
 const nav = [
   ["소개", "#about"],
@@ -27,7 +26,6 @@ export function Header() {
           {nav.map(([label, href]) => <a key={href} href={href}>{label}</a>)}
         </nav>
         <a className="header-cta" href="#contact">함께 이야기하기</a>
-        <ThemeToggle />
         <button className="menu-button" type="button" aria-label={open ? "메뉴 닫기" : "메뉴 열기"} aria-expanded={open} onClick={() => setOpen(!open)}>
           <MenuIcon open={open} />
         </button>

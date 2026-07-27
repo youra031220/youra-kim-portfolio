@@ -25,9 +25,6 @@ export function Portfolio() {
     <Header />
     <main id="top">
       <section className="hero">
-        <div className="theme-decor hero-decor" aria-hidden="true">
-          <span /><span /><span /><span /><span /><span />
-        </div>
         <div className="hero-folio" aria-hidden="true">PORTFOLIO · 2026</div>
         <div className="container hero-grid">
           <FadeIn className="hero-copy">
@@ -35,13 +32,22 @@ export function Portfolio() {
             <h1>금융 데이터를<br /><em>서비스와 전략</em>으로<br />연결합니다.</h1>
             <p className="hero-intro">
               금융 도메인 지식과 데이터·AI 활용 역량을 바탕으로<br className="desktop-only" />
-              문제를 발견하고 실제 서비스와 전략으로 구현하는 기획자입니다.
+              {" "}문제를 발견하고 실제 서비스와 전략으로 구현하는 기획자입니다.
             </p>
             <div className="hero-actions">
               <a className="button primary" href="#projects">프로젝트 보기<ArrowDown /></a>
               {profile.resume ? <a className="button secondary" href={profile.resume} download>이력서 다운로드</a> :
                 <span className="button secondary disabled" aria-disabled="true">이력서 추가 예정</span>}
             </div>
+          </FadeIn>
+          <FadeIn className="hero-art" delay={100}>
+            <Image
+              src="/images/youra-portrait.png"
+              alt="김유라를 표현한 선화 일러스트"
+              fill
+              priority
+              sizes="(max-width: 700px) 70vw, 34vw"
+            />
           </FadeIn>
           <FadeIn className="hero-profile" delay={120}>
             <div className="cover-line" aria-hidden="true"><span>Y</span><i /></div>
@@ -61,7 +67,6 @@ export function Portfolio() {
       </section>
 
       <section id="about" className="section about">
-        <div className="theme-decor section-decor" aria-hidden="true"><span /><span /><span /></div>
         <div className="container">
           <SectionTitle eyebrow="01 · ABOUT" title="복잡한 문제를 발견하고, 실행 가능한 답으로 만듭니다." />
           <div className="about-grid">
@@ -78,7 +83,6 @@ export function Portfolio() {
       </section>
 
       <section id="projects" className="section projects">
-        <div className="theme-decor projects-decor" aria-hidden="true"><span /><span /><span /></div>
         <div className="container">
           <SectionTitle eyebrow="02 · FEATURED PROJECTS" title="데이터를 읽고, 기회를 설계한 프로젝트" copy="핵심 성과와 문제 해결 과정을 중심으로 정리했습니다." />
           <div className="project-list">
