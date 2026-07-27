@@ -31,6 +31,11 @@ export function Portfolio() {
     <Header />
     <main id="top">
       <section className="hero">
+        <span
+          className="hero-texture"
+          style={{ backgroundImage: `url("${assetPath("/images/billie-holiday.png")}")` }}
+          aria-hidden="true"
+        />
         <div className="hero-folio" aria-hidden="true">PORTFOLIO · 2026</div>
         <div className="container hero-grid">
           <FadeIn className="hero-copy">

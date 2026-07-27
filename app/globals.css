@@ -35,6 +35,8 @@ svg { width: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-l
 .nav-links, .menu-button { display: none; }
 
 .hero { min-height: max(840px, 100svh); padding: 165px 0 80px; position: relative; background: var(--background); }
+.hero-texture { position: absolute; inset: 0; pointer-events: none; background-repeat: repeat; opacity: .1; mix-blend-mode: multiply; }
+.hero > .container { position: relative; z-index: 1; }
 .hero-grid { min-height: max(615px, calc(100svh - 245px)); display: grid; grid-template-columns: 1.28fr .72fr; grid-template-rows: 1fr auto; column-gap: 8%; align-items: center; }
 .hero-copy { min-width: 0; padding-bottom: 28px; }
 .hero-kicker, .eyebrow { margin: 0 0 18px; color: var(--purple); font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
