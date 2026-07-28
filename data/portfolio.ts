@@ -82,6 +82,8 @@ export const skillGroups = [
       "Procreate",
       "LLMs",
       "Godot",
+      "Vercel",
+      "Render",
     ],
   },
   {
