@@ -213,6 +213,52 @@ export const projects: Project[] = [
     tags: ["FRED API", "Macro", "ETF", "Portfolio", "Research"],
     links: [{ label: "매크로 분석 보고서", href: "" }],
   },
+  {
+    id: "persona-aware-fashion-ai",
+    index: "06",
+    title: "Persona-Aware Fashion Marketing AI",
+    subtitle: "이미지 이해와 페르소나 기반 AI 마케팅 카피 생성",
+    period: "기간 정보 추가 예정",
+    role: "Computer Vision · Vision-Language Models · Prompt Engineering",
+    achievement: "생성 전략별 사실성·제어 가능성·자연스러움 비교",
+    problem:
+      "이미지 하나만으로 맞춤형 마케팅 문구를 생성할 수 있을까?",
+    actions: [
+      "CLIP을 활용해 의류의 색상·패턴·카테고리·스타일 속성 추론",
+      "추론한 상품 속성과 소비자 페르소나를 연결한 마케팅 문구 생성",
+      "Rule-based·Persona Template·Vision-Language Model 생성 전략 비교",
+    ],
+    result:
+      "단순 이미지 캡셔닝을 넘어 사실성, 제어 가능성, 자연스러움 사이의 균형을 검증했습니다.",
+    tags: ["Computer Vision", "CLIP", "Vision-Language Models", "Prompt Engineering", "Marketing AI"],
+    links: [
+      { label: "Report", href: "" },
+      { label: "GitHub", href: "" },
+    ],
+  },
+  {
+    id: "xai-autonomous-driving",
+    index: "07",
+    title: "Explainable AI for Autonomous Driving",
+    subtitle: "자율주행 객체 탐지 모델의 의사결정을 설명하는 XAI 분석",
+    period: "기간 정보 추가 예정",
+    role: "Explainable AI · Computer Vision · Deep Learning",
+    achievement: "환경별 판단 근거와 설명 신뢰성 분석",
+    problem:
+      "AI는 왜 그렇게 판단했을까?",
+    actions: [
+      "YOLOv8 객체 탐지 모델에 Grad-CAM 기반 시각화와 RISE 적용",
+      "주간·야간·우천 환경에서 모델이 활용하는 시각 정보 비교",
+      "Insertion·Deletion Game을 통한 설명 신뢰성 정량 평가",
+    ],
+    result:
+      "악천후 환경일수록 객체보다 주변 맥락 정보에 더 크게 의존하는 경향을 확인했습니다.",
+    tags: ["Explainable AI (XAI)", "YOLOv8", "Grad-CAM", "RISE", "Computer Vision", "Deep Learning"],
+    links: [
+      { label: "Report", href: "" },
+      { label: "GitHub", href: "" },
+    ],
+  },
 ];
 
 export const reports = [
