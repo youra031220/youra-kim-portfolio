@@ -37,7 +37,7 @@ export function Header({
           ))}
           <a href={`${basePath}/playground/`} onClick={() => setOpen(false)}>Playground</a>
           <a href={`${basePath}/#contact`} onClick={() => setOpen(false)}>연락처</a>
-          <div className="language-toggle mobile-language" aria-label="언어 선택">
+          <div className="language-toggle mobile-language" data-language={language} aria-label="언어 선택">
             {(["KOR", "EN"] as const).map(item => (
               <button type="button" className={language === item ? "active" : ""} aria-pressed={language === item} key={item} onClick={() => changeLanguage(item)}>{item}</button>
             ))}
@@ -47,7 +47,7 @@ export function Header({
           {nav.map(([label, href]) => <a key={href} href={`${basePath}/${href}`}>{label}</a>)}
           <a href={`${basePath}/playground/`}>Playground</a>
         </nav>
-        <div className="language-toggle" aria-label="언어 선택">
+        <div className="language-toggle" data-language={language} aria-label="언어 선택">
           {(["KOR", "EN"] as const).map(item => (
             <button type="button" className={language === item ? "active" : ""} aria-pressed={language === item} key={item} onClick={() => changeLanguage(item)}>{item}</button>
           ))}
