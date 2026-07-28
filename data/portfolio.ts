@@ -128,8 +128,9 @@ export const projectSkillMap: Record<string, string[]> = {
     "GitHub", "LLMs", "Render",
   ],
   seoulm8: [
-    "Service Planning", "User Journey Mapping", "Wireframing", "Prototyping",
-    "Market Research", "Prompt Engineering", "Figma", "Python", "JavaScript",
+    "Service Planning", "Business Strategy", "User Journey Mapping", "Wireframing",
+    "Prototyping", "Market Research", "AI Agent Design", "Prompt Engineering",
+    "Data Visualization", "Figma", "Python", "JavaScript",
     "HTML/CSS", "React", "Vite", "Node.js", "Express.js", "APIs",
     "Responsive Web Design", "Git", "VS Code", "GitHub", "LLMs", "Vercel",
   ],
