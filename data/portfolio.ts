@@ -145,7 +145,7 @@ export const projectSkillMap: Record<string, string[]> = {
     "Microsoft Office", "Google Colab", "Jupyter Notebook", "FnGuide",
   ],
   "persona-aware-fashion-ai": [
-    "Research Design", "Prompt Engineering", "AI Agent Design", "Data Visualization", "Python",
+    "Research Design", "Prompt Engineering", "Data Visualization", "Python",
     "APIs", "ML&DL", "Natural Language Processing", "Computer Vision",
     "Google Colab", "Jupyter Notebook", "Overleaf", "LLMs",
   ],
