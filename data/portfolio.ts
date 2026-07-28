@@ -81,6 +81,7 @@ export const skillGroups = [
       "Canva",
       "Procreate",
       "LLMs",
+      "Godot",
     ],
   },
   {
