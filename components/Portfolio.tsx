@@ -23,6 +23,7 @@ function SectionTitle({ title, copy }: { title: string; copy?: string }) {
 
 export function Portfolio() {
   const [selectedSkills, setSelectedSkills] = useState<string[]>([]);
+  const [likedProjects, setLikedProjects] = useState<string[]>([]);
   const [language, setLanguage] = useState<"KOR" | "EN">("KOR");
   const contactLinks = [
     { label: "Email", href: profile.email ? `mailto:${profile.email}` : "" },
@@ -127,6 +128,21 @@ export function Portfolio() {
           <div className="project-list">
             {projects.map((project, i) => (
               <FadeIn key={project.id} className="project-card" delay={Math.min(i * 50, 150)}>
+                <button
+                  type="button"
+                  className={`project-like ${likedProjects.includes(project.id) ? "is-liked" : ""}`}
+                  aria-label={`${project.title} 좋아요`}
+                  aria-pressed={likedProjects.includes(project.id)}
+                  onClick={() => setLikedProjects(current =>
+                    current.includes(project.id)
+                      ? current.filter(id => id !== project.id)
+                      : [...current, project.id]
+                  )}
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 20.5 10.55 19.18C5.4 14.5 2 11.42 2 7.65 2 4.57 4.42 2.15 7.5 2.15c1.74 0 3.41.81 4.5 2.09a6.02 6.02 0 0 1 4.5-2.09c3.08 0 5.5 2.42 5.5 5.5 0 3.77-3.4 6.85-8.55 11.54L12 20.5Z" />
+                  </svg>
+                </button>
                 <Link className="project-card-link" href={`/projects/${project.id}`} aria-label={`${project.title} 상세 페이지 보기`}>
                   <div className="project-card-period">
                     <span>{project.period}</span>
