@@ -118,28 +118,29 @@ export const projectSkillMap: Record<string, string[]> = {
     "Data Visualization", "AI Agent Design", "Prompt Engineering",
     "Financial Modeling", "Python", "APIs", "Data Preprocessing",
     "Web Scraping", "LLMs", "Google Colab", "Jupyter Notebook",
-    "Microsoft Office", "Google Workspace", "Notion", "FnGuide",
+    "Microsoft Office", "Google Workspace", "Notion", "FnGuide", "Render",
   ],
   stockclaw: [
     "Service Planning", "Wireframing", "Prototyping", "AI Agent Design",
     "Prompt Engineering", "Python", "SQL", "JavaScript", "HTML/CSS",
     "React", "Node.js", "Express.js", "APIs", "Web Scraping",
     "Data Preprocessing", "Natural Language Processing", "Git", "VS Code",
-    "GitHub", "Google Workspace", "Notion", "LLMs", "Render",
+    "GitHub", "Microsoft Office", "Google Workspace", "Notion", "LLMs", "Render",
   ],
   seoulm8: [
     "Service Planning", "Business Strategy", "User Journey Mapping", "Wireframing",
     "Prototyping", "Market Research", "AI Agent Design", "Prompt Engineering",
     "Data Visualization", "Figma", "Python", "JavaScript",
     "HTML/CSS", "React", "Vite", "Node.js", "Express.js", "APIs",
-    "Responsive Web Design", "Git", "VS Code", "GitHub", "Google Workspace",
-    "LLMs", "Vercel",
+    "Responsive Web Design", "Git", "VS Code", "GitHub", "Microsoft Office",
+    "Google Workspace", "LLMs", "Vercel", "Render",
   ],
   "ai-etf-research": [
     "Research Design", "EDA", "Data Visualization", "Topic Modeling",
     "Financial Modeling", "Prompt Engineering", "Python", "SQL", "APIs",
     "Data Preprocessing", "Natural Language Processing", "Web Scraping",
-    "Google Colab", "Jupyter Notebook", "Google Workspace", "Notion",
+    "Google Colab", "Jupyter Notebook", "Microsoft Office", "Google Workspace",
+    "Notion",
   ],
   "finance-society": [
     "Business Strategy", "Market Research", "Financial Modeling",
@@ -149,11 +150,12 @@ export const projectSkillMap: Record<string, string[]> = {
   "persona-aware-fashion-ai": [
     "Research Design", "Prompt Engineering", "Data Visualization", "Python",
     "APIs", "ML&DL", "Natural Language Processing", "Computer Vision",
-    "Google Colab", "Jupyter Notebook", "Overleaf", "LLMs",
+    "Google Colab", "Jupyter Notebook", "Microsoft Office", "Overleaf", "LLMs",
   ],
   "xai-autonomous-driving": [
     "Research Design", "Data Visualization", "Python", "ML&DL", "Computer Vision",
-    "Explainable AI", "Google Colab", "Jupyter Notebook", "Overleaf",
+    "Explainable AI", "Google Colab", "Jupyter Notebook", "Microsoft Office",
+    "Overleaf",
   ],
 };
 
