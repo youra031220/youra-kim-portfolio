@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Header } from "@/components/Header";
@@ -22,6 +23,9 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
   const { id } = await params;
   const project = projects.find(item => item.id === id);
   if (!project) notFound();
+  const otherProjects = projects.filter(item => item.id !== project.id).slice(0, 2);
+  const assetPath = (path: string) =>
+    path.startsWith("/") ? `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${path}` : path;
 
   return (
     <>
@@ -34,40 +38,94 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
           </div>
         </div>
 
-        <article className="container project-detail">
-          <header className="project-detail-hero">
+        <article className="project-detail">
+          <header className="container project-detail-hero">
             <p>{project.subtitle}</p>
             <h1>{project.title}</h1>
             <strong>{project.achievement}</strong>
           </header>
 
-          <div className="project-detail-meta">
-            <div><span>PERIOD</span><p>{project.period}</p></div>
-            <div><span>ROLE</span><p>{project.role}</p></div>
+          <div className={`container project-detail-visual ${project.thumbnail ? "" : "is-placeholder"}`}>
+            {project.thumbnail ? (
+              <Image
+                src={assetPath(project.thumbnail)}
+                alt={`${project.title} 프로젝트 대표 화면`}
+                fill
+                priority
+                sizes="(max-width: 700px) 100vw, 1280px"
+              />
+            ) : (
+              <div>
+                <span>PROJECT VISUAL</span>
+                <strong>{project.title}</strong>
+              </div>
+            )}
           </div>
 
-          <div className="project-detail-content">
-            <section>
-              <span>PROBLEM</span>
+          <section className="project-detail-meta">
+            <div className="container project-detail-meta-inner">
+              <div><span>ROLE</span><p>{project.role}</p></div>
+              <div><span>PERIOD</span><p>{project.period}</p></div>
+              <div><span>FOCUS</span><p>{project.tags.join(" · ")}</p></div>
+              <div><span>OUTCOME</span><p>{project.achievement}</p></div>
+            </div>
+          </section>
+
+          <div className="container project-detail-content">
+            <section className="project-detail-section">
+              <p className="project-detail-kicker">PROJECT OVERVIEW</p>
               <h2>문제 정의</h2>
-              <p>{project.problem}</p>
+              <p className="project-detail-copy">{project.problem}</p>
             </section>
-            <section>
-              <span>WHAT I DID</span>
+
+            <section className="project-detail-section">
+              <p className="project-detail-kicker">PROCESS</p>
               <h2>수행 내용</h2>
-              <ol>{project.actions.map(action => <li key={action}>{action}</li>)}</ol>
+              <ol className="project-process-list">
+                {project.actions.map((action, index) => (
+                  <li key={action}><span>{String(index + 1).padStart(2, "0")}</span><p>{action}</p></li>
+                ))}
+              </ol>
             </section>
-            <section>
-              <span>RESULT</span>
-              <h2>결과</h2>
-              <p>{project.result}</p>
+
+            <section className="project-result-panel">
+              <p className="project-detail-kicker">RESULT</p>
+              <h2>{project.result}</h2>
+            </section>
+
+            <section className="project-detail-section project-resources">
+              <div>
+                <p className="project-detail-kicker">SKILLS</p>
+                <h2>활용 기술과 역량</h2>
+                <div className="tags">{project.tags.map(tag => <span key={tag}>{tag}</span>)}</div>
+              </div>
+              <div>
+                <p className="project-detail-kicker">FILES & LINKS</p>
+                <h2>관련 자료</h2>
+                <div className="project-links">{project.links.map(link => <LinkButton key={link.label} item={link} />)}</div>
+              </div>
+            </section>
+
+            <section className="other-projects">
+              <p className="project-detail-kicker">MORE PROJECTS</p>
+              <h2>다른 프로젝트 보기</h2>
+              <div className="other-project-grid">
+                {otherProjects.map(item => (
+                  <Link href={`/projects/${item.id}`} className="other-project-card" key={item.id}>
+                    <div className={`other-project-image ${item.thumbnail ? "" : "is-placeholder"}`}>
+                      {item.thumbnail ? (
+                        <Image src={assetPath(item.thumbnail)} alt="" fill sizes="(max-width: 700px) 100vw, 50vw" />
+                      ) : (
+                        <span>{item.title}</span>
+                      )}
+                    </div>
+                    <p>{item.subtitle}</p>
+                    <h3>{item.title}</h3>
+                  </Link>
+                ))}
+              </div>
             </section>
           </div>
-
-          <footer className="project-detail-footer">
-            <div className="tags">{project.tags.map(tag => <span key={tag}>{tag}</span>)}</div>
-            <div className="project-links">{project.links.map(link => <LinkButton key={link.label} item={link} />)}</div>
-          </footer>
         </article>
       </main>
     </>
