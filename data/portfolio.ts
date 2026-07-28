@@ -60,6 +60,7 @@ export const skillGroups = [
       "Financial Modeling",
       "AI Agent Design",
       "Prompt Engineering",
+      "Research Design",
     ],
   },
   {
@@ -109,6 +110,50 @@ export const skillGroups = [
     ],
   },
 ];
+
+// 프로젝트 카드의 하트와 About 스킬 선택 상태를 연결합니다.
+export const projectSkillMap: Record<string, string[]> = {
+  kodex: [
+    "Service Planning", "Business Strategy", "Market Research", "EDA",
+    "Data Visualization", "AI Agent Design", "Prompt Engineering",
+    "Financial Modeling", "Python", "APIs", "Data Preprocessing",
+    "Web Scraping", "LLMs", "Google Colab", "Jupyter Notebook",
+    "Microsoft Office", "FnGuide",
+  ],
+  stockclaw: [
+    "Service Planning", "Wireframing", "Prototyping", "AI Agent Design",
+    "Prompt Engineering", "Python", "SQL", "JavaScript", "HTML/CSS",
+    "React", "Node.js", "Express.js", "APIs", "Web Scraping",
+    "Data Preprocessing", "Natural Language Processing", "Git", "VS Code",
+    "GitHub", "LLMs", "Render",
+  ],
+  seoulm8: [
+    "Service Planning", "User Journey Mapping", "Wireframing", "Prototyping",
+    "Market Research", "Prompt Engineering", "Figma", "Python", "JavaScript",
+    "HTML/CSS", "React", "Vite", "Node.js", "Express.js", "APIs",
+    "Responsive Web Design", "Git", "VS Code", "GitHub", "LLMs", "Vercel",
+  ],
+  "ai-etf-research": [
+    "Research Design", "EDA", "Data Visualization", "Topic Modeling",
+    "Financial Modeling", "Prompt Engineering", "Python", "SQL", "APIs",
+    "Data Preprocessing", "Natural Language Processing", "Web Scraping",
+    "Google Colab", "Jupyter Notebook",
+  ],
+  "finance-society": [
+    "Business Strategy", "Market Research", "Financial Modeling",
+    "Monte Carlo Simulation", "EDA", "Data Visualization", "Python", "APIs",
+    "Microsoft Office", "Google Colab", "Jupyter Notebook", "FnGuide",
+  ],
+  "persona-aware-fashion-ai": [
+    "Prompt Engineering", "AI Agent Design", "Data Visualization", "Python",
+    "APIs", "ML&DL", "Natural Language Processing", "Computer Vision",
+    "Google Colab", "Jupyter Notebook", "LLMs",
+  ],
+  "xai-autonomous-driving": [
+    "Data Visualization", "Python", "ML&DL", "Computer Vision",
+    "Explainable AI", "Google Colab", "Jupyter Notebook",
+  ],
+};
 
 export const projects: Project[] = [
   {
