@@ -130,9 +130,9 @@ svg { width: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-l
 .project-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 34px 28px; }
 .project-card { min-width: 0; padding: 8px; position: relative; color: #141417; background: #fefefe; border-radius: 16px; transform-origin: right bottom; transition: rotate .45s cubic-bezier(.23,1,.32,1), box-shadow .45s; }
 .project-card:hover { rotate: 1.5deg; box-shadow: 0 18px 38px rgba(38,38,42,.14); }
-.project-like { width: 40px; height: 40px; padding: 0; position: absolute; top: 16px; right: 16px; z-index: 3; display: grid; place-items: center; color: #666; background: #1d1d1d; border: 0; border-radius: 12px; cursor: pointer; box-shadow: inset -2px -2px 5px rgba(255,255,255,.16), inset 2px 2px 5px rgba(0,0,0,.12), 3px 3px 8px rgba(0,0,0,.22); transition: color .2s ease, transform .2s ease; }
-.project-like svg { width: 21px; height: 21px; fill: currentColor; stroke: none; }
-.project-like:hover { color: #aaa; transform: translateY(-1px); }
+.project-like { width: 40px; height: 40px; padding: 0; position: absolute; top: 16px; right: 16px; z-index: 3; display: grid; place-items: center; color: #666; background: transparent; border: 0; cursor: pointer; transition: color .2s ease, transform .2s ease; }
+.project-like svg { width: 27px; height: 27px; fill: currentColor; stroke: none; }
+.project-like:hover { color: #333; transform: translateY(-1px); }
 .project-like.is-liked { color: #fc4e4e; }
 .project-like.is-liked svg { animation: heart-pop .25s ease-out; }
 .project-like:focus-visible { outline: 3px solid var(--purple); outline-offset: 3px; }
