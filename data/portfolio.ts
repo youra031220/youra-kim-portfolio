@@ -145,13 +145,13 @@ export const projectSkillMap: Record<string, string[]> = {
     "Microsoft Office", "Google Colab", "Jupyter Notebook", "FnGuide",
   ],
   "persona-aware-fashion-ai": [
-    "Prompt Engineering", "AI Agent Design", "Data Visualization", "Python",
+    "Research Design", "Prompt Engineering", "AI Agent Design", "Data Visualization", "Python",
     "APIs", "ML&DL", "Natural Language Processing", "Computer Vision",
-    "Google Colab", "Jupyter Notebook", "LLMs",
+    "Google Colab", "Jupyter Notebook", "Overleaf", "LLMs",
   ],
   "xai-autonomous-driving": [
-    "Data Visualization", "Python", "ML&DL", "Computer Vision",
-    "Explainable AI", "Google Colab", "Jupyter Notebook",
+    "Research Design", "Data Visualization", "Python", "ML&DL", "Computer Vision",
+    "Explainable AI", "Google Colab", "Jupyter Notebook", "Overleaf",
   ],
 };
 
