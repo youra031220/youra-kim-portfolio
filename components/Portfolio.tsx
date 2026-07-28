@@ -36,24 +36,26 @@ export function Portfolio() {
       <section className="hero">
         <div className="container hero-grid">
           <FadeIn className={`hero-copy ${language === "EN" ? "hero-copy-en" : ""}`}>
-            {language === "KOR" ? <>
-              <h1>안녕하세요, <em>김유라</em>입니다.</h1>
-              <p className="hero-subheadline">데이터와 AI로 문제를 이해하고,<br />서비스와 해결책으로 연결하는 <span>창의적 전략가</span></p>
-              <div className="hero-description">
-                <p>서강대학교 경영학 · 아트&테크놀로지</p>
-                <p>비즈니스 전략, 금융 디지털, AI 서비스 기획과 데이터 분석을 중심으로<br className="desktop-only" />
-                  문제를 정의하고 서비스를 구현하는 프로젝트를 진행하고 있습니다.</p>
+            <div className="hero-language-content" key={language}>
+              {language === "KOR" ? <>
+                <h1>안녕하세요, <em>김유라</em>입니다.</h1>
+                <p className="hero-subheadline">데이터와 AI로 문제를 이해하고,<br />서비스와 해결책으로 연결하는 <span>창의적 전략가</span></p>
+                <div className="hero-description">
+                  <p>서강대학교 경영학 · 아트&테크놀로지</p>
+                  <p>비즈니스 전략, 금융 디지털, AI 서비스 기획과 데이터 분석을 중심으로<br className="desktop-only" />
+                    문제를 정의하고 서비스를 구현하는 프로젝트를 진행하고 있습니다.</p>
+                </div>
+              </> : <>
+                <h1>i&apos;m <em>youra</em>--</h1>
+                <p className="hero-en-intro">a strategist, product planner, builder,<br />
+                  financial enthusiast, data explorer,<br />
+                  AI learner, and someone who enjoys turning<br className="desktop-only" />
+                  ideas into real products.</p>
+                <p className="hero-en-study">currently studying Business Administration and Art &amp; Technology @ Sogang University.</p>
+              </>}
+              <div className="hero-actions">
+                <a className="button primary" href="#projects">{language === "KOR" ? "프로젝트 보기" : "View projects"}<ArrowDown /></a>
               </div>
-            </> : <>
-              <h1>i&apos;m <em>youra</em>--</h1>
-              <p className="hero-en-intro">a strategist, product planner, builder,<br />
-                financial enthusiast, data explorer,<br />
-                AI learner, and someone who enjoys turning<br className="desktop-only" />
-                ideas into real products.</p>
-              <p className="hero-en-study">currently studying Business Administration and Art &amp; Technology @ Sogang University.</p>
-            </>}
-            <div className="hero-actions">
-              <a className="button primary" href="#projects">{language === "KOR" ? "프로젝트 보기" : "View projects"}<ArrowDown /></a>
             </div>
           </FadeIn>
           <FadeIn className="hero-art" delay={100}>
