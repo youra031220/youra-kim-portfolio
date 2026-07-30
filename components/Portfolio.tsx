@@ -223,6 +223,16 @@ export function Portfolio() {
       <div className="footer-masthead" aria-hidden="true">YOURZ</div>
       <div className="footer-signature">
         <div className="footer-signature-box">© 2026 by Youra Kim</div>
+        <button
+          className="footer-top-button"
+          type="button"
+          aria-label="Back to top"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        >
+          <svg className="footer-top-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 4 5 11l1.4 1.4 4.6-4.6V20h2V7.8l4.6 4.6L19 11l-7-7Z" />
+          </svg>
+        </button>
         <div className="footer-signature-box">built from scratch :)</div>
       </div>
     </footer>
