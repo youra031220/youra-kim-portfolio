@@ -29,9 +29,9 @@ export const profile = {
   nameEn: "Youra Kim",
   university: "서강대학교",
   majors: "경영학 · 아트&테크놀로지",
-  email: "", // 예: hello@example.com
-  github: "", // 예: https://github.com/username
-  linkedin: "", // 예: https://linkedin.com/in/username
+  email: "youra031220@naver.com",
+  github: "https://github.com/youra031220",
+  linkedin: "https://www.linkedin.com/in/youra-kim-193994352/",
   resume: "", // public/documents 내부 파일은 예: /documents/resume.pdf
 };
 

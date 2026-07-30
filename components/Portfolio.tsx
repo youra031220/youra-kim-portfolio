@@ -25,12 +25,6 @@ export function Portfolio() {
   const [selectedSkills, setSelectedSkills] = useState<string[]>([]);
   const [likedProjects, setLikedProjects] = useState<string[]>([]);
   const [language, setLanguage] = useState<"KOR" | "EN">("KOR");
-  const contactLinks = [
-    { label: "Email", href: profile.email ? `mailto:${profile.email}` : "" },
-    { label: "GitHub", href: profile.github },
-    { label: "LinkedIn", href: profile.linkedin },
-  ];
-
   return <>
     <Header language={language} onLanguageChange={setLanguage} />
     <main id="top">
@@ -210,9 +204,22 @@ export function Portfolio() {
           <div className="contact-grid">
           <div className="contact-label"><p>프로젝트 및 협업 문의</p></div>
           <div className="contact-right"><p>편하게 연락해 주세요.</p>
-            <div className="contact-links">{contactLinks.map(link => link.href ?
-              <a key={link.label} href={link.href} target={link.label !== "Email" ? "_blank" : undefined} rel="noreferrer">{link.label}<ArrowUpRight /></a> :
-              <span key={link.label}>{link.label}<small>추가 예정</small></span>)}
+            <div className="contact-socials" aria-label="Contact links">
+              <a className="contact-social contact-social-github" href={profile.github} target="_blank" rel="noreferrer" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 .7A11.5 11.5 0 0 0 8.4 23c.6.1.8-.3.8-.6v-2.2c-3.4.7-4.1-1.4-4.1-1.4-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .7Z" />
+                </svg>
+              </a>
+              <a className="contact-social contact-social-linkedin" href={profile.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5.3 7.8H.7V23h4.6V7.8ZM3 1A2.7 2.7 0 1 0 3 6.4 2.7 2.7 0 0 0 3 1ZM23.3 14.3c0-4.6-2.5-6.8-5.8-6.8-2.7 0-3.9 1.5-4.5 2.5V7.8H8.4V23H13v-7.5c0-2 .4-4 2.9-4 2.4 0 2.5 2.3 2.5 4.1V23H23l.3-8.7Z" />
+                </svg>
+              </a>
+              <a className="contact-social contact-social-email" href={`mailto:${profile.email}`} aria-label="Email">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z" />
+                </svg>
+              </a>
             </div>
           </div>
           </div>
