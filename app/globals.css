@@ -191,10 +191,12 @@ svg { width: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-l
 .project-detail-visual.is-placeholder div { padding: 40px; text-align: center; }
 .project-detail-visual.is-placeholder span { display: block; color: #47718b; font-size: 11px; font-weight: 700; letter-spacing: .14em; }
 .project-detail-visual.is-placeholder strong { max-width: 820px; margin-top: 18px; display: block; font-size: clamp(36px, 6vw, 78px); line-height: 1.05; letter-spacing: -2px; }
-.project-detail-meta { padding: 40px 0; background: #d1ebff; }
-.project-detail-meta-inner { display: grid; grid-template-columns: 1.35fr .65fr 1.5fr 1.2fr; gap: 38px; }
+.project-detail-meta { padding: 62px 0; background: #d1ebff; }
+.project-detail-meta-inner { display: grid; gap: 28px; }
+.project-detail-meta-inner > div { display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 34px; align-items: start; }
 .project-detail-meta span, .project-detail-kicker { color: #315f79; font-size: 10px; font-weight: 700; letter-spacing: .11em; }
-.project-detail-meta p { margin: 8px 0 0; font-size: 14px; line-height: 1.65; }
+.project-detail-meta span { padding-top: 3px; color: #1f2529; font-size: 16px; letter-spacing: .04em; }
+.project-detail-meta p { margin: 0; font-size: 20px; line-height: 1.6; }
 .project-detail-content { padding-top: 92px; padding-bottom: 110px; }
 .project-detail-section { max-width: 960px; margin: 0 auto; }
 .project-detail-section + .project-detail-section { margin-top: 88px; }
@@ -365,8 +367,11 @@ footer { padding: 62px 0 28px; overflow: hidden; border-top: 1px solid var(--lin
   .project-detail-hero { padding-top: 54px; padding-bottom: 44px; }
   .project-detail-hero h1 { font-size: clamp(38px, 11vw, 54px); letter-spacing: -1.6px; }
   .project-detail-visual { width: 100%; aspect-ratio: 4 / 3; }
-  .project-detail-meta { padding: 32px 0; }
-  .project-detail-meta-inner { grid-template-columns: 1fr; gap: 25px; }
+  .project-detail-meta { padding: 42px 0; }
+  .project-detail-meta-inner { gap: 24px; }
+  .project-detail-meta-inner > div { grid-template-columns: 92px minmax(0, 1fr); gap: 16px; }
+  .project-detail-meta span { font-size: 12px; }
+  .project-detail-meta p { font-size: 16px; }
   .project-detail-content { padding-top: 64px; padding-bottom: 80px; }
   .project-detail-section + .project-detail-section { margin-top: 62px; }
   .project-detail-copy { font-size: 16px; line-height: 1.75; }
