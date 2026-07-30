@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Header } from "@/components/Header";
-import { playgroundItems, profile } from "@/data/portfolio";
+import { playgroundItems } from "@/data/portfolio";
 
 export const metadata: Metadata = {
   title: "Playground | 김유라 포트폴리오",
@@ -70,18 +70,6 @@ export default function PlaygroundPage() {
           </div>
         </div>
       </main>
-      <footer className="playground-footer">
-        <div className="playground-footer-box playground-footer-left">
-          © 2026 by {profile.nameEn}
-        </div>
-        <div className="playground-footer-contact">
-          <strong>contact:</strong>
-          <span>{profile.nameEn}</span>
-        </div>
-        <div className="playground-footer-box playground-footer-right">
-          built from scratch :)
-        </div>
-      </footer>
     </>
   );
 }

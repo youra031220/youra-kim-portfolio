@@ -248,14 +248,6 @@ svg { width: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-l
 .playground-card-info p { margin: 0 0 24px; color: var(--muted); }
 .playground-card-info a, .playground-link-disabled { display: inline-block; padding-bottom: 2px; border-bottom: 1px solid currentColor; font-size: 12px; }
 .playground-link-disabled { color: #aaa; }
-.playground-footer { min-height: 190px; padding: 52px 48px 28px; position: relative; display: grid; grid-template-columns: 1fr auto 1fr; align-items: end; gap: 32px; background: #fbfbfb; border-top: 0; color: #111; font-family: ui-monospace, "SFMono-Regular", Menlo, monospace; }
-.playground-footer-box { padding: 10px 13px; border: 2px solid #222; font-size: clamp(13px, 1.15vw, 18px); line-height: 1.25; white-space: nowrap; }
-.playground-footer-left { justify-self: start; }
-.playground-footer-right { justify-self: end; }
-.playground-footer-contact { display: flex; align-items: center; gap: 14px; font-size: clamp(14px, 1.15vw, 19px); white-space: nowrap; }
-.playground-footer-contact strong { font-family: Georgia, "Times New Roman", serif; font-size: 1.08em; }
-.playground-footer-contact span { padding: 10px 13px; position: relative; z-index: 0; display: inline-block; background: #f5f5f5; border: 1px solid #777; }
-.playground-footer-contact span::before { content: ""; position: absolute; inset: -10px 8px 8px -10px; z-index: -1; background: #087a1e; border: 2px solid #111; }
 
 .report-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 34px 28px; }
 .report-card { overflow: hidden; background: white; border: 1px solid var(--line); transition: transform .2s; }
@@ -290,6 +282,8 @@ svg { width: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-l
 footer { padding: 62px 0 28px; overflow: hidden; border-top: 1px solid var(--line); }
 .footer-masthead { margin-bottom: 40px; color: var(--purple-soft); font-size: clamp(90px, 15vw, 210px); font-weight: 600; line-height: .75; letter-spacing: -7px; text-align: center; white-space: nowrap; }
 .footer-folio { padding-top: 18px; display: flex; justify-content: space-between; border-top: 1px solid var(--line); color: #aaa; font-size: 10px; }
+.footer-signature { width: 100%; padding: 18px 48px 0; display: flex; align-items: center; justify-content: space-between; color: #111; font-family: ui-monospace, "SFMono-Regular", Menlo, monospace; }
+.footer-signature-box { padding: 10px 13px; border: 2px solid #222; font-size: clamp(13px, 1.15vw, 18px); line-height: 1.25; white-space: nowrap; }
 
 .fade-in { animation: fade-up .6s ease both; }
 @keyframes fade-up { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
@@ -380,11 +374,6 @@ footer { padding: 62px 0 28px; overflow: hidden; border-top: 1px solid var(--lin
   .playground-content { padding-top: 56px; padding-bottom: 80px; }
   .playground-intro { margin-bottom: 46px; }
   .playground-grid { grid-template-columns: 1fr; }
-  .playground-footer { min-height: 210px; padding: 40px 16px 22px; grid-template-columns: 1fr 1fr; gap: 34px 12px; }
-  .playground-footer-contact { grid-column: 1 / -1; grid-row: 1; justify-self: center; }
-  .playground-footer-left { grid-column: 1; grid-row: 2; }
-  .playground-footer-right { grid-column: 2; grid-row: 2; }
-  .playground-footer-box { font-size: 10px; }
   .project-detail-bar .container { width: calc(100% - 32px); }
   .project-detail-hero { padding-top: 54px; padding-bottom: 44px; }
   .project-detail-hero h1 { font-size: clamp(38px, 11vw, 54px); letter-spacing: -1.6px; white-space: normal; overflow-wrap: anywhere; }
@@ -411,4 +400,6 @@ footer { padding: 62px 0 28px; overflow: hidden; border-top: 1px solid var(--lin
   .contact-grid { grid-template-columns: 1fr; gap: 36px; }
   .footer-masthead { font-size: 22vw; letter-spacing: -3px; }
   .footer-folio { flex-direction: column; gap: 6px; }
+  .footer-signature { padding: 16px 16px 0; gap: 12px; }
+  .footer-signature-box { padding: 8px 9px; font-size: 10px; }
 }
