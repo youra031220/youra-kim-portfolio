@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import type { CSSProperties } from "react";
 import { notFound } from "next/navigation";
 import { Header } from "@/components/Header";
 import { LinkButton } from "@/components/LinkButton";
@@ -65,7 +64,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
 
           <section
             className="project-detail-meta"
-            style={{ "--stucco-texture": `url("${assetPath("/images/stucco.png")}")` } as CSSProperties}
+            style={{ backgroundImage: `url("${assetPath("/images/stucco.png")}")` }}
           >
             <div className="container project-detail-meta-inner">
               <div><span>ROLE</span><p>{project.role}</p></div>

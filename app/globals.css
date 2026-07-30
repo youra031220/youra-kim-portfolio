@@ -196,9 +196,8 @@ svg { width: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-l
 .project-detail-visual.is-placeholder div { padding: 40px; text-align: center; }
 .project-detail-visual.is-placeholder span { display: block; color: #47718b; font-size: 11px; font-weight: 700; letter-spacing: .14em; }
 .project-detail-visual.is-placeholder strong { max-width: 820px; margin-top: 18px; display: block; font-size: clamp(36px, 6vw, 78px); line-height: 1.05; letter-spacing: -2px; }
-.project-detail-meta { padding: 62px 0; position: relative; isolation: isolate; overflow: hidden; background-color: #d1ebff; }
-.project-detail-meta::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; background-image: var(--stucco-texture); background-repeat: repeat; background-size: 250px 249px; opacity: .16; mix-blend-mode: multiply; }
-.project-detail-meta-inner { width: min(calc(100% - 80px), var(--max)); margin: 0 auto; position: relative; z-index: 1; display: grid; gap: 28px; }
+.project-detail-meta { padding: 62px 0; background-color: #d1ebff; background-repeat: repeat; background-size: 250px 249px; }
+.project-detail-meta-inner { width: min(calc(100% - 80px), var(--max)); margin: 0 auto; display: grid; gap: 28px; }
 .project-detail-meta-inner > div { min-width: 0; display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 34px; align-items: start; }
 .project-detail-meta span, .project-detail-kicker { color: #315f79; font-size: 10px; font-weight: 700; letter-spacing: .11em; }
 .project-detail-meta span { padding-top: 3px; color: #1f2529; font-size: 16px; letter-spacing: .04em; }
