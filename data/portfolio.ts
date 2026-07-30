@@ -269,6 +269,7 @@ export const projects: Project[] = [
     index: "04",
     title: "금융경제분석학회",
     subtitle: "거시경제 지표 분석과 산업테마 분석 보고서 작성",
+    website: "https://safeofficial.github.io/safe-sogang.github.io/",
     thumbnail: "/images/thumbnails/Finance_Society.png",
     period: "2026.03–2026.07",
     role: "매크로 분석 · 투자 가설 수립 · 포트폴리오 운용",
@@ -282,7 +283,10 @@ export const projects: Project[] = [
     ],
     result: "거시 데이터에 근거한 테마별 투자 가설과 포트폴리오를 구축했습니다.",
     tags: ["FRED API", "Macroeconomics", "Portfolio Management", "Portfolio", "Research"],
-    links: [{ label: "매크로 분석 보고서", href: "" }],
+    links: [
+      { label: "학회 사이트", href: "https://safeofficial.github.io/safe-sogang.github.io/" },
+      { label: "매크로 분석 보고서", href: "" },
+    ],
   },
   {
     id: "persona-aware-fashion-ai",
