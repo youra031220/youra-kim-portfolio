@@ -281,6 +281,7 @@ svg { width: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-l
 .contact-social:hover svg { animation: contact-icon-shake .25s; }
 .contact-social-github:hover { background: #555; outline-color: #555; }
 .contact-social-linkedin:hover { background: #0a66c2; outline-color: #0a66c2; }
+.contact-social-email svg { width: 27px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 .contact-social-email:hover { background: #03c75a; outline-color: #03c75a; }
 @keyframes contact-icon-shake {
   10% { transform: rotate(15deg); }
