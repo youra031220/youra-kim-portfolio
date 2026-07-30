@@ -216,7 +216,7 @@ export const projects: Project[] = [
     ],
     links: [
       { label: "서비스 방문", href: "https://etf-kore.onrender.com/" },
-      { label: "마케팅 제안서", href: "" },
+      { label: "마케팅 제안서", href: "/documents/KODEX_Marketing_final.pdf" },
     ],
   },
   {
@@ -331,7 +331,7 @@ export const projects: Project[] = [
     tags: ["FRED API", "Macroeconomics", "Portfolio Management", "Portfolio", "Research"],
     links: [
       { label: "학회 사이트", href: "https://safeofficial.github.io/safe-sogang.github.io/" },
-      { label: "매크로 분석 보고서", href: "" },
+      { label: "매크로 분석 보고서", href: "/documents/Safe_macro_report.pdf" },
     ],
   },
   {
@@ -374,7 +374,7 @@ export const projects: Project[] = [
       "Generative AI",
     ],
     links: [
-      { label: "Report", href: "" },
+      { label: "Report", href: "/documents/DL_CV_report.pdf" },
       { label: "GitHub", href: "" },
     ],
   },
@@ -418,7 +418,7 @@ export const projects: Project[] = [
       "Matplotlib",
     ],
     links: [
-      { label: "Report", href: "" },
+      { label: "Report", href: "/documents/XAI_report.pdf" },
       { label: "GitHub", href: "" },
     ],
   },
