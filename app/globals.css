@@ -287,11 +287,11 @@ footer { padding: 62px 0 28px; overflow: hidden; border-top: 1px solid var(--lin
 .footer-signature-box:first-child { justify-self: start; }
 .footer-signature-box:last-child { justify-self: end; }
 .footer-top-button { width: 50px; height: 50px; padding: 0; border: 0; border-radius: 50%; position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden; background: #71c9f5; box-shadow: none; cursor: pointer; transition: width .3s, border-radius .3s, background-color .3s; }
-.footer-top-icon { width: 12px; flex: 0 0 auto; transition: transform .3s; }
+.footer-top-icon { width: 18px; flex: 0 0 auto; opacity: 1; transition: transform .3s, opacity .2s; }
 .footer-top-icon path { fill: white; }
 .footer-top-button::before { content: "Back to Top"; position: absolute; bottom: -20px; color: white; font-size: 0; font-weight: 600; white-space: nowrap; opacity: 0; transition: bottom .3s, font-size .3s, opacity .3s; }
 .footer-top-button:hover { width: 140px; border-radius: 50px; background: #38afe9; }
-.footer-top-button:hover .footer-top-icon { transform: translateY(-200%); }
+.footer-top-button:hover .footer-top-icon { opacity: 0; transform: translateY(-300%); }
 .footer-top-button:hover::before { bottom: 50%; font-size: 13px; opacity: 1; transform: translateY(50%); }
 
 .fade-in { animation: fade-up .6s ease both; }
