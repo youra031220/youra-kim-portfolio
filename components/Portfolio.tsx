@@ -217,7 +217,8 @@ export function Portfolio() {
               </a>
               <a className="contact-social contact-social-email" href={`mailto:${profile.email}`} aria-label="Email">
                 <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z" />
+                  <rect x="3" y="5" width="18" height="14" rx="2" />
+                  <path d="m4 7 8 6 8-6" />
                 </svg>
               </a>
             </div>
