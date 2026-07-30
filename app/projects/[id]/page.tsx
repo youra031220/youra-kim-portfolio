@@ -79,7 +79,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
             </section>
 
             <section className="project-detail-section">
-              <p className="project-detail-kicker">PROCESS</p>
+              <p className="project-detail-kicker">PROJECT RECAP</p>
               <h2>수행 내용</h2>
               <ol className="project-process-list">
                 {project.actions.map((action, index) => (
@@ -89,7 +89,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
             </section>
 
             <section className="project-result-panel">
-              <p className="project-detail-kicker">RESULT</p>
+              <p className="project-detail-kicker">LEARNINGS</p>
               <h2>{project.result}</h2>
             </section>
 

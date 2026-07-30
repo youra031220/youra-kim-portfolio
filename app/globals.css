@@ -212,8 +212,8 @@ svg { width: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-l
 .project-process-list li { min-height: 84px; padding: 20px 0; display: grid; grid-template-columns: 70px 1fr; align-items: center; border-bottom: 1px solid var(--line); }
 .project-process-list li > span { color: var(--purple); font-family: ui-monospace, "SFMono-Regular", Menlo, monospace; font-size: 12px; font-weight: 700; }
 .project-process-list p { margin: 0; color: #454951; font-size: 17px; line-height: 1.65; }
-.project-result-panel { max-width: 1080px; margin: 96px auto; padding: 54px 58px; background: #c4e6ff; border-radius: 18px; }
-.project-result-panel h2 { max-width: 900px; margin: 0; font-size: clamp(28px, 3.4vw, 46px); font-weight: 600; line-height: 1.35; letter-spacing: -1.2px; }
+.project-result-panel { max-width: 960px; margin: 88px auto; }
+.project-result-panel h2 { max-width: 900px; margin: 0; font-size: clamp(28px, 3vw, 40px); font-weight: 600; line-height: 1.4; letter-spacing: -1px; }
 .project-resources { max-width: 1080px; padding: 48px 0; display: grid; grid-template-columns: 1fr 1fr; gap: 70px; border-top: 1px solid var(--text); border-bottom: 1px solid var(--text); }
 .project-resources > div { min-width: 0; }
 .project-resources h2 { margin-bottom: 20px; font-size: 25px; }
@@ -382,7 +382,7 @@ footer { padding: 62px 0 28px; overflow: hidden; border-top: 1px solid var(--lin
   .project-detail-copy { font-size: 16px; line-height: 1.75; }
   .project-process-list li { min-height: 74px; grid-template-columns: 46px 1fr; }
   .project-process-list p { font-size: 15px; }
-  .project-result-panel { margin: 68px 0; padding: 34px 26px; border-radius: 12px; }
+  .project-result-panel { margin: 62px 0; }
   .project-resources { padding: 38px 0; grid-template-columns: 1fr; gap: 48px; }
   .other-projects { margin-top: 72px; }
   .other-project-grid { grid-template-columns: 1fr; gap: 38px; }
