@@ -263,6 +263,7 @@ export const projects: Project[] = [
     index: "04",
     title: "금융경제분석학회",
     subtitle: "거시경제 지표 분석과 산업테마 분석 보고서 작성",
+    thumbnail: "/images/thumbnails/Finance_Society.png",
     period: "2026.03–2026.07",
     role: "매크로 분석 · 투자 가설 수립 · 포트폴리오 운용",
     achievement: "금융 데이터에서 투자가설까지",
