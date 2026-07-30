@@ -171,7 +171,30 @@ export function Portfolio() {
                     </div>
                     <div className="project-card-bottom">
                       <div className="tags">{project.tags.slice(0, 3).map(tag => <span key={tag}>{tag}</span>)}</div>
-                      <span className="project-detail-link"><span>Link</span><ArrowUpRight /></span>
+                      {project.website ? (
+                        <span
+                          className="project-detail-link"
+                          role="link"
+                          tabIndex={0}
+                          aria-label={`${project.title} 배포 사이트 새 탭에서 열기`}
+                          onClick={(event) => {
+                            event.preventDefault();
+                            event.stopPropagation();
+                            window.open(project.website, "_blank", "noopener,noreferrer");
+                          }}
+                          onKeyDown={(event) => {
+                            if (event.key === "Enter" || event.key === " ") {
+                              event.preventDefault();
+                              event.stopPropagation();
+                              window.open(project.website, "_blank", "noopener,noreferrer");
+                            }
+                          }}
+                        >
+                          <span>Link</span><ArrowUpRight />
+                        </span>
+                      ) : (
+                        <span className="project-detail-link"><span>Link</span><ArrowUpRight /></span>
+                      )}
                     </div>
                   </div>
                 </Link>

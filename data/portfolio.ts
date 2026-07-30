@@ -10,6 +10,7 @@ export type Project = {
   index: string;
   title: string;
   subtitle: string;
+  website?: string;
   period: string;
   role: string;
   achievement: string;
@@ -175,6 +176,7 @@ export const projects: Project[] = [
     index: "01",
     title: "KODEX ETF Marketing Intelligence Agent",
     subtitle: "삼성자산운용 KODEX ETF 채널별 마케팅 개선방안 도출 프로젝트",
+    website: "https://etf-kore.onrender.com/",
     thumbnail: "/images/thumbnails/ETF_Marketing.png",
     period: "2026.05–2026.06",
     role: "문제 정의 · 데이터 분석 · AI Agent 기획/개발 · 마케팅 전략",
@@ -188,7 +190,10 @@ export const projects: Project[] = [
     ],
     result: "신규 ETF 아이디어와 데이터 기반 마케팅 방향을 제안했습니다.",
     tags: ["ETF", "금융 데이터", "AI Agent", "마케팅 전략", "Python"],
-    links: [{ label: "마케팅 제안서", href: "" }],
+    links: [
+      { label: "서비스 방문", href: "https://etf-kore.onrender.com/" },
+      { label: "마케팅 제안서", href: "" },
+    ],
   },
   {
     id: "stockclaw",
@@ -218,6 +223,7 @@ export const projects: Project[] = [
     index: "05",
     title: "SeoulM8",
     subtitle: "외국인 관광객을 위한 AI 서울 하루 코스 추천",
+    website: "https://seoulmatebeta.vercel.app/",
     thumbnail: "/images/thumbnails/SeoulM8.png",
     period: "2025.09–2025.12",
     role: "프런트엔드 · UX/UI · 경로 알고리즘 · 브랜딩 · 발표",
@@ -232,7 +238,7 @@ export const projects: Project[] = [
     result: "아이디어를 실제 배포 가능한 다국어 AI 여행 서비스로 구현했습니다.",
     tags: ["React", "Vite", "Gemini API", "Naver API", "UX/UI"],
     links: [
-      { label: "사이트 방문", href: "" },
+      { label: "사이트 방문", href: "https://seoulmatebeta.vercel.app/" },
       { label: "GitHub", href: "" },
     ],
   },
