@@ -269,13 +269,14 @@ svg { width: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-l
 .website-info dd { margin: 5px 0 0; color: var(--muted); font-size: 13px; }
 .website-info .project-links { margin-top: 26px; }
 
-.contact { padding-bottom: 96px; }
+.contact { padding-bottom: 96px; color: #fff; background-color: #343434; background-image: url("/youra-kim-portfolio/images/iron-grip.png"); background-repeat: repeat; }
+.contact .section-heading { border-color: rgb(255 255 255 / 55%); }
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8%; align-items: start; }
 .contact-label p { margin: 0; font-size: clamp(24px, 3vw, 40px); font-weight: 600; letter-spacing: -1px; }
 .eyebrow.light { color: var(--purple); }
-.contact-right > p { margin: 0 0 26px; color: var(--muted); }
+.contact-right > p { margin: 0 0 26px; color: #d7d7d7; }
 .contact-socials { display: flex; align-items: center; gap: 28px; }
-.contact-social { width: 60px; height: 60px; display: inline-flex; flex: 0 0 auto; color: white; background: #26262a; outline: 2px solid #26262a; border-radius: 50%; transition: outline-offset .25s, outline-color .25s, background-color .25s; }
+.contact-social { width: 60px; height: 60px; display: inline-flex; flex: 0 0 auto; color: white; background: #26262a; outline: 2px solid rgb(255 255 255 / 85%); border-radius: 50%; transition: outline-offset .25s, outline-color .25s, background-color .25s; }
 .contact-social:hover { outline-offset: 4px; }
 .contact-social svg { width: 29px; height: 29px; margin: auto; fill: currentColor; }
 .contact-social:hover svg { animation: contact-icon-shake .25s; }
