@@ -70,7 +70,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
               <div><span>ROLE</span><p>{project.role}</p></div>
               <div><span>TIMELINE</span><p>{project.period}</p></div>
               <div><span>TEAM</span><p>팀 구성 정보 추가 예정</p></div>
-              <div><span>PROCESS</span><p>{project.actions.join(" · ")}</p></div>
+              <div><span>KEY OUTCOME</span><p>{project.achievement}</p></div>
             </div>
           </section>
 
