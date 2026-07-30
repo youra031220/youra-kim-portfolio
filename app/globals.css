@@ -146,7 +146,7 @@ svg { width: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-l
 .project-thumbnail img { padding: 0; object-fit: cover; }
 .project-thumbnail > span { color: #aaa; font-family: ui-monospace, "SFMono-Regular", Menlo, monospace; font-size: 10px; letter-spacing: .08em; text-align: center; }
 .project-card-summary { min-height: 178px; padding: 20px 16px 14px; display: flex; flex-direction: column; }
-.project-card-summary > p { margin: 0; font-family: var(--font); font-size: 13px; line-height: 1.45; }
+.project-card-summary > p { margin: 0; font-family: var(--font); font-size: 15px; line-height: 1.5; }
 .project-card-outcome { margin-top: 18px; padding-top: 2px; }
 .project-card-outcome span { display: block; margin-bottom: 5px; font-size: 9px; font-weight: 600; letter-spacing: .1em; }
 .project-card-outcome strong { font-size: 14px; font-weight: 600; }
