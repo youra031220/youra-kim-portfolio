@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   description: "김유라의 실험과 사이드 프로젝트를 소개하는 공간입니다.",
 };
 
+const assetPath = (path: string) =>
+  path.startsWith("/") ? `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${path}` : path;
+
 export default function PlaygroundPage() {
   return (
     <>
@@ -43,7 +46,7 @@ export default function PlaygroundPage() {
                   </div>
                   <div className="project-thumbnail">
                     {item.thumbnail ? (
-                      <Image src={item.thumbnail} alt={`${item.title} 미리보기`} fill sizes="(max-width: 700px) 100vw, 50vw" />
+                      <Image src={assetPath(item.thumbnail)} alt={`${item.title} 미리보기`} fill sizes="(max-width: 700px) 100vw, 50vw" />
                     ) : (
                       <span>WEB<br />EXHIBITION</span>
                     )}
