@@ -152,11 +152,11 @@ svg { width: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-l
 .project-card-outcome strong { font-size: 14px; font-weight: 600; }
 .project-card-bottom { margin-top: auto; padding-top: 20px; display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; }
 .project-card-bottom .tags span { color: #555; background: #f3f3f1; border: 0; border-radius: 999px; }
-.project-detail-link { flex: none; min-height: 38px; padding: 8px 12px 8px 16px; position: relative; isolation: isolate; overflow: hidden; display: inline-flex; align-items: center; justify-content: center; gap: 9px; color: #141417; background: #fff; border: 1px solid #141417; border-radius: 999px; font-size: 13px; font-weight: 400; }
-.project-detail-link::before { content: ""; width: 100%; aspect-ratio: 1; position: absolute; left: -105%; z-index: 0; background: #000; border-radius: 50%; transform: scale(.8); transition: left .7s ease, transform .7s ease; }
+.project-detail-link { flex: none; min-height: 38px; padding: 8px 12px 8px 16px; position: relative; isolation: isolate; overflow: hidden; display: inline-flex; align-items: center; justify-content: center; gap: 9px; color: #141417; background: #fff; border: 1px solid #141417; border-radius: 999px; box-shadow: 0 5px 14px rgba(20,20,23,.12), 0 2px 5px rgba(20,20,23,.08); font-size: 13px; font-weight: 400; transition: color .25s ease, box-shadow .3s ease; }
+.project-detail-link::before { content: ""; position: absolute; inset: -1px; z-index: 0; background: #000; border-radius: inherit; clip-path: circle(0 at 0 50%); transition: clip-path .7s cubic-bezier(.22,1,.36,1); }
 .project-detail-link > span, .project-detail-link svg { position: relative; z-index: 1; }
-.project-detail-link:hover::before { left: 0; transform: scale(1.55); }
-.project-detail-link:hover { color: #fff; background: #fff; }
+.project-detail-link:hover::before { clip-path: circle(180% at 0 50%); }
+.project-detail-link:hover { color: #fff; background: #fff; box-shadow: 0 8px 20px rgba(20,20,23,.18), 0 3px 7px rgba(20,20,23,.1); }
 .project-meta span, .project-story span, .document-type, .site-no { display: block; margin-bottom: 6px; color: var(--purple); font-size: 9px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }
 .project-detail-link svg { width: 24px; height: 24px; padding: 6px; border: 1px solid #141417; border-radius: 50%; transition: transform .3s ease, color .3s ease, background-color .3s ease, border-color .3s ease; }
 .project-detail-link:hover svg { color: #141417; background: #fff; border-color: #fff; transform: rotate(45deg); }
