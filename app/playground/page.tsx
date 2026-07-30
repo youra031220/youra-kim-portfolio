@@ -22,29 +22,46 @@ export default function PlaygroundPage() {
         <div className="container playground-content">
           <header className="playground-intro">
             <p>PLAYGROUND</p>
-            <h1>Experiments &<br />Side Projects</h1>
+            <h1>Experiments &amp; Side Projects</h1>
           </header>
 
           <div className="playground-grid">
             {playgroundItems.map(item => (
-              <article className="playground-card" key={item.title}>
-                <div className="playground-thumbnail">
-                  {item.thumbnail ? (
-                    <Image src={item.thumbnail} alt={`${item.title} 미리보기`} fill sizes="(max-width: 700px) 100vw, 50vw" />
-                  ) : (
-                    <span>IMAGE<br />COMING SOON</span>
-                  )}
-                </div>
-                <div className="playground-card-info">
-                  <span>{item.type}</span>
-                  <h2>{item.title}</h2>
-                  <p>{item.description}</p>
-                  {item.siteUrl ? (
-                    <a href={item.siteUrl} target="_blank" rel="noreferrer">사이트 방문 ↗</a>
-                  ) : (
-                    <span className="playground-link-disabled">링크 추가 예정</span>
-                  )}
-                </div>
+              <article className="project-card playground-project-card" key={item.title}>
+                <a
+                  className="project-card-link"
+                  href={item.siteUrl || undefined}
+                  target={item.siteUrl ? "_blank" : undefined}
+                  rel={item.siteUrl ? "noreferrer" : undefined}
+                >
+                  <div className="project-card-period">
+                    <span>{item.type}</span>
+                    <span>PLAYGROUND</span>
+                  </div>
+                  <div className="project-card-name">
+                    <h3>{item.title}</h3>
+                  </div>
+                  <div className="project-thumbnail">
+                    {item.thumbnail ? (
+                      <Image src={item.thumbnail} alt={`${item.title} 미리보기`} fill sizes="(max-width: 700px) 100vw, 50vw" />
+                    ) : (
+                      <span>WEB<br />EXHIBITION</span>
+                    )}
+                  </div>
+                  <div className="project-card-summary">
+                    <p>{item.description}</p>
+                    <div className="project-card-bottom">
+                      <div className="tags">
+                        <span>Interactive Web</span>
+                        <span>3D Gallery</span>
+                      </div>
+                      <span className="project-detail-link">
+                        <span>{item.siteUrl ? "사이트 방문" : "링크 추가 예정"}</span>
+                        <span aria-hidden="true">↗</span>
+                      </span>
+                    </div>
+                  </div>
+                </a>
               </article>
             ))}
           </div>
