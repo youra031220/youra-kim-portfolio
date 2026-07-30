@@ -170,7 +170,7 @@ export function Portfolio() {
                       <strong>{project.achievement}</strong>
                     </div>
                     <div className="project-card-bottom">
-                      <div className="tags">{project.tags.slice(0, 3).map(tag => <span key={tag}>{tag}</span>)}</div>
+                      <div className="tags">{(project.cardTags ?? project.tags.slice(0, 3)).map(tag => <span key={tag}>{tag}</span>)}</div>
                       {project.website ? (
                         <span
                           className="project-detail-link"

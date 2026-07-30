@@ -19,6 +19,7 @@ export type Project = {
   result: string;
   learnings?: string[];
   tags: string[];
+  cardTags?: string[];
   links: LinkItem[];
 };
 
@@ -214,6 +215,7 @@ export const projects: Project[] = [
       "Prompt Engineering",
       "Data Analysis",
     ],
+    cardTags: ["AI Agent Design", "Data Analysis", "Marketing Strategy"],
     links: [
       { label: "서비스 방문", href: "https://etf-kore.onrender.com/" },
       { label: "마케팅 제안서", href: "/documents/KODEX_Marketing_final.pdf" },
@@ -236,6 +238,7 @@ export const projects: Project[] = [
     ],
     result: "조회부터 분석, 기록, 매매까지 이어지는 AI 투자 서비스 흐름을 구현했습니다.",
     tags: ["AI Finance", "DART", "Telegram", "Node.js", "API"],
+    cardTags: ["Service Planning", "AI Agent Design", "Financial Data"],
     links: [
       { label: "GitHub", href: "" },
       { label: "시연 영상", href: "" },
@@ -283,6 +286,7 @@ export const projects: Project[] = [
       "UX/UI Design",
       "Prompt Engineering",
     ],
+    cardTags: ["Service Planning", "Route Optimization", "UX/UI Design"],
     links: [
       { label: "사이트 방문", href: "https://seoulmatebeta.vercel.app/" },
       { label: "GitHub", href: "" },
@@ -305,6 +309,7 @@ export const projects: Project[] = [
     ],
     result: "뉴스 내러티브와 ETF 시장 지표를 연결하는 연구 프레임을 설계했습니다.",
     tags: ["NLP", "Topic Modeling", "ETF", "Python", "Research"],
+    cardTags: ["Research Design", "Topic Modeling", "Financial Analysis"],
     links: [
       { label: "연구설계서", href: "" },
       { label: "최종 보고서", href: "" },
@@ -329,6 +334,7 @@ export const projects: Project[] = [
     ],
     result: "거시 데이터에 근거한 테마별 투자 가설과 포트폴리오를 구축했습니다.",
     tags: ["FRED API", "Macroeconomics", "Portfolio Management", "Portfolio", "Research"],
+    cardTags: ["Macroeconomics", "Financial Modeling", "Portfolio Management"],
     links: [
       { label: "학회 사이트", href: "https://safeofficial.github.io/safe-sogang.github.io/" },
       { label: "매크로 분석 보고서", href: "/documents/Safe_macro_report.pdf" },
@@ -373,6 +379,7 @@ export const projects: Project[] = [
       "Image Captioning",
       "Generative AI",
     ],
+    cardTags: ["Computer Vision", "Multimodal AI", "Prompt Engineering"],
     links: [
       { label: "Report", href: "/documents/DL_CV_report.pdf" },
       { label: "GitHub", href: "" },
@@ -417,6 +424,7 @@ export const projects: Project[] = [
       "Deep Learning",
       "Matplotlib",
     ],
+    cardTags: ["Explainable AI", "Computer Vision", "Deep Learning"],
     links: [
       { label: "Report", href: "/documents/XAI_report.pdf" },
       { label: "GitHub", href: "" },
