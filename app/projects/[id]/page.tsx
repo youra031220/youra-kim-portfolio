@@ -65,9 +65,9 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
           <section className="project-detail-meta">
             <div className="container project-detail-meta-inner">
               <div><span>ROLE</span><p>{project.role}</p></div>
-              <div><span>PERIOD</span><p>{project.period}</p></div>
-              <div><span>FOCUS</span><p>{project.tags.join(" · ")}</p></div>
-              <div><span>OUTCOME</span><p>{project.achievement}</p></div>
+              <div><span>TIMELINE</span><p>{project.period}</p></div>
+              <div><span>TEAM</span><p>팀 구성 정보 추가 예정</p></div>
+              <div><span>PROCESS</span><p>{project.actions.join(" · ")}</p></div>
             </div>
           </section>
 
