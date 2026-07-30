@@ -194,7 +194,7 @@ export const projects: Project[] = [
     id: "stockclaw",
     index: "03",
     title: "StockClaw",
-    subtitle: "자연어 기반 AI 투자일임 서비스",
+    subtitle: "2026 한이음 ICT 드림업 공모전: 자연어 기반 AI 투자일임 서비스",
     period: "2026.03–2026.10",
     role: "서비스 기획 · 금융 데이터 통합 · 기능 구현",
     achievement: "자연어로 연결한 투자 워크플로",
