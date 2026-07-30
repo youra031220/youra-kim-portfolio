@@ -221,7 +221,10 @@ export function Portfolio() {
     </main>
     <footer>
       <div className="footer-masthead" aria-hidden="true">YOURZ</div>
-      <div className="container footer-folio"><span>© 2026 Youra Kim</span><span>BUSINESS · FINANCE · DATA · AI · SERVICE</span></div>
+      <div className="footer-signature">
+        <div className="footer-signature-box">© 2026 by Youra Kim</div>
+        <div className="footer-signature-box">built from scratch :)</div>
+      </div>
     </footer>
   </>;
 }
