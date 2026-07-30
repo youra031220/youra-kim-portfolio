@@ -159,6 +159,16 @@ export const projectSkillMap: Record<string, string[]> = {
   ],
 };
 
+const projectOrder = [
+  "kodex",
+  "ai-etf-research",
+  "stockclaw",
+  "finance-society",
+  "seoulm8",
+  "persona-aware-fashion-ai",
+  "xai-autonomous-driving",
+];
+
 export const projects: Project[] = [
   {
     id: "kodex",
@@ -166,7 +176,7 @@ export const projects: Project[] = [
     title: "KODEX ETF Marketing Intelligence Agent",
     subtitle: "삼성자산운용 KODEX ETF 마케팅 개선 프로젝트",
     thumbnail: "/images/thumbnails/ETF_Marketing.png",
-    period: "기간 정보 추가 예정",
+    period: "2026.05–2026.06",
     role: "문제 정의 · 데이터 분석 · AI Agent 기획/개발 · 마케팅 전략",
     achievement: "프로젝트 최우수상",
     problem:
@@ -182,10 +192,10 @@ export const projects: Project[] = [
   },
   {
     id: "stockclaw",
-    index: "02",
+    index: "03",
     title: "StockClaw",
     subtitle: "자연어 기반 AI 투자일임 서비스",
-    period: "기간 정보 추가 예정",
+    period: "2026.03–2026.10",
     role: "서비스 기획 · 금융 데이터 통합 · 기능 구현",
     achievement: "자연어로 연결한 투자 워크플로",
     problem:
@@ -205,11 +215,11 @@ export const projects: Project[] = [
   },
   {
     id: "seoulm8",
-    index: "03",
+    index: "05",
     title: "SeoulM8",
     subtitle: "외국인 관광객을 위한 AI 서울 하루 코스 추천",
     thumbnail: "/images/thumbnails/SeoulM8.png",
-    period: "기간 정보 추가 예정",
+    period: "2025.09–2025.12",
     role: "프런트엔드 · UX/UI · 경로 알고리즘 · 브랜딩 · 발표",
     achievement: "장려상 수상",
     problem:
@@ -228,10 +238,10 @@ export const projects: Project[] = [
   },
   {
     id: "ai-etf-research",
-    index: "04",
+    index: "02",
     title: "AI 뉴스 토픽과 ETF 성과 연구",
     subtitle: "뉴스 토픽 변화와 금융시장 반응의 관계 분석",
-    period: "기간 정보 추가 예정",
+    period: "2026.07–2026.08",
     role: "연구 설계 · 텍스트 분석 · ETF 성과 분석",
     achievement: "산업 내러티브를 금융 지표로 검증",
     problem:
@@ -250,10 +260,10 @@ export const projects: Project[] = [
   },
   {
     id: "finance-society",
-    index: "05",
+    index: "04",
     title: "금융경제분석학회",
     subtitle: "거시 지표 분석과 테마 투자 가설 검증",
-    period: "기간 정보 추가 예정",
+    period: "2026.03–2026.07",
     role: "매크로 분석 · 투자 가설 수립 · 포트폴리오 운용",
     achievement: "데이터에서 투자 가설까지",
     problem:
@@ -273,7 +283,7 @@ export const projects: Project[] = [
     title: "Persona-Aware Fashion Marketing AI",
     subtitle: "이미지 이해와 페르소나 기반 AI 마케팅 카피 생성",
     thumbnail: "/images/thumbnails/Fashion_Marketing_CV.png",
-    period: "기간 정보 추가 예정",
+    period: "2025.09–2025.12",
     role: "Computer Vision · Vision-Language Models · Prompt Engineering",
     achievement: "생성 전략별 사실성·제어 가능성·자연스러움 비교",
     problem:
@@ -297,7 +307,7 @@ export const projects: Project[] = [
     title: "Explainable AI for Autonomous Driving",
     subtitle: "자율주행 객체 탐지 모델의 의사결정을 설명하는 XAI 분석",
     thumbnail: "/images/thumbnails/XAI_Autonomous_Driving.png",
-    period: "기간 정보 추가 예정",
+    period: "2025.09–2025.12",
     role: "Explainable AI · Computer Vision · Deep Learning",
     achievement: "환경별 판단 근거와 설명 신뢰성 분석",
     problem:
@@ -315,7 +325,7 @@ export const projects: Project[] = [
       { label: "GitHub", href: "" },
     ],
   },
-];
+].sort((a, b) => projectOrder.indexOf(a.id) - projectOrder.indexOf(b.id));
 
 export const reports = [
   {
