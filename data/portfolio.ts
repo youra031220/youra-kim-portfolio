@@ -174,7 +174,7 @@ export const projects: Project[] = [
     id: "kodex",
     index: "01",
     title: "KODEX ETF Marketing Intelligence Agent",
-    subtitle: "삼성자산운용 KODEX ETF 마케팅 개선 프로젝트",
+    subtitle: "삼성자산운용 KODEX ETF 채널별 마케팅 개선방안 도출 프로젝트",
     thumbnail: "/images/thumbnails/ETF_Marketing.png",
     period: "2026.05–2026.06",
     role: "문제 정의 · 데이터 분석 · AI Agent 기획/개발 · 마케팅 전략",
@@ -262,10 +262,10 @@ export const projects: Project[] = [
     id: "finance-society",
     index: "04",
     title: "금융경제분석학회",
-    subtitle: "거시 지표 분석과 테마 투자 가설 검증",
+    subtitle: "거시경제 지표 분석과 산업테마 분석 보고서 작성",
     period: "2026.03–2026.07",
     role: "매크로 분석 · 투자 가설 수립 · 포트폴리오 운용",
-    achievement: "데이터에서 투자 가설까지",
+    achievement: "금융 데이터에서 투자가설까지",
     problem:
       "거시경제 환경과 산업별 구조적 변화를 실제 투자 가설과 포트폴리오로 연결했습니다.",
     actions: [
@@ -274,7 +274,7 @@ export const projects: Project[] = [
       "글로벌 ETF 기반 모의 포트폴리오 구성 및 운용",
     ],
     result: "거시 데이터에 근거한 테마별 투자 가설과 포트폴리오를 구축했습니다.",
-    tags: ["FRED API", "Macro", "ETF", "Portfolio", "Research"],
+    tags: ["FRED API", "Macroeconomics", "Portfolio Management", "Portfolio", "Research"],
     links: [{ label: "매크로 분석 보고서", href: "" }],
   },
   {
