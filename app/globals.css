@@ -208,6 +208,7 @@ svg { width: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-l
 .project-detail-kicker { margin: 0 0 12px; }
 .project-detail-section h2, .other-projects > h2 { margin: 0 0 24px; font-size: clamp(28px, 3vw, 40px); letter-spacing: -1px; }
 .project-detail-copy { max-width: 850px; margin: 0; color: #454951; font-size: 18px; line-height: 1.85; white-space: pre-line; }
+.project-section-title { margin: 0 0 28px; color: #17191b; font-size: clamp(28px, 3vw, 42px); font-weight: 700; line-height: 1.15; letter-spacing: -.04em; }
 .project-process-list { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
 .project-process-list li { min-height: 84px; padding: 20px 0; display: grid; grid-template-columns: 70px 1fr; align-items: center; border-bottom: 1px solid var(--line); }
 .project-process-list li > span { color: var(--purple); font-family: ui-monospace, "SFMono-Regular", Menlo, monospace; font-size: 12px; font-weight: 700; }
@@ -219,6 +220,7 @@ svg { width: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-l
 .project-resources { max-width: 1080px; padding: 48px 0; display: grid; grid-template-columns: 1fr 1fr; gap: 70px; border-top: 1px solid var(--text); border-bottom: 1px solid var(--text); }
 .project-resources > div { min-width: 0; }
 .project-resources h2 { margin-bottom: 20px; font-size: 25px; }
+.project-resources h2.project-section-title { font-size: clamp(28px, 3vw, 40px); }
 .project-resources .tags span { padding: 8px 11px; color: #1f2529; background: #eaf7fd; font-size: 11px; }
 .other-projects { max-width: 1080px; margin: 100px auto 0; }
 .other-project-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; }

@@ -76,14 +76,12 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
 
           <div className="container project-detail-content">
             <section className="project-detail-section">
-              <p className="project-detail-kicker">PROJECT OVERVIEW</p>
-              <h2>문제 정의</h2>
+              <h2 className="project-section-title">PROJECT OVERVIEW</h2>
               <p className="project-detail-copy">{project.problem}</p>
             </section>
 
             <section className="project-detail-section">
-              <p className="project-detail-kicker">PROJECT RECAP</p>
-              <h2>수행 내용</h2>
+              <h2 className="project-section-title">PROJECT RECAP</h2>
               <ol className="project-process-list">
                 {project.actions.map((action, index) => (
                   <li key={action}><span>{String(index + 1).padStart(2, "0")}</span><p>{action}</p></li>
@@ -92,7 +90,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
             </section>
 
             <section className="project-result-panel">
-              <p className="project-detail-kicker">LEARNINGS</p>
+              <h2 className="project-section-title">LEARNINGS</h2>
               {project.learnings ? (
                 <ul className="project-learning-list">
                   {project.learnings.map(learning => <li key={learning}>{learning}</li>)}
@@ -104,20 +102,17 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
 
             <section className="project-detail-section project-resources">
               <div>
-                <p className="project-detail-kicker">SKILLS</p>
-                <h2>활용 기술과 역량</h2>
+                <h2 className="project-section-title">SKILLS</h2>
                 <div className="tags">{project.tags.map(tag => <span key={tag}>{tag}</span>)}</div>
               </div>
               <div>
-                <p className="project-detail-kicker">FILES & LINKS</p>
-                <h2>관련 자료</h2>
+                <h2 className="project-section-title">FILES & LINKS</h2>
                 <div className="project-links">{project.links.map(link => <LinkButton key={link.label} item={link} />)}</div>
               </div>
             </section>
 
             <section className="other-projects">
-              <p className="project-detail-kicker">MORE PROJECTS</p>
-              <h2>다른 프로젝트 보기</h2>
+              <h2 className="project-section-title">MORE PROJECTS</h2>
               <div className="other-project-grid">
                 {otherProjects.map(item => (
                   <Link href={`/projects/${item.id}`} className="other-project-card" key={item.id}>
