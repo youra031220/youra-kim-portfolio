@@ -483,6 +483,6 @@ export const playgroundItems = [
     description: "사진 전시를 웹에서 경험할 수 있도록 제작한 전시 웹사이트",
     type: "WEB EXHIBITION",
     thumbnail: "",
-    siteUrl: "",
+    siteUrl: "https://youra031220.github.io/foto-exhibition-site/",
   },
 ];

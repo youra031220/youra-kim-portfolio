@@ -236,7 +236,7 @@ svg { width: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-l
 .playground-content { padding-top: 90px; padding-bottom: 120px; }
 .playground-intro { margin-bottom: 70px; }
 .playground-intro > p { margin: 0 0 18px; color: var(--purple); font-size: 12px; font-weight: 600; letter-spacing: .1em; }
-.playground-intro h1 { margin: 0; font-size: clamp(48px, 7vw, 96px); font-weight: 600; line-height: 1.08; letter-spacing: -3px; }
+.playground-intro h1 { margin: 0; font-family: "Rubik Spray Paint", sans-serif; font-size: clamp(20px, 6vw, 88px); font-weight: 400; line-height: 1.08; letter-spacing: -1px; white-space: nowrap; }
 .playground-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; }
 .playground-card { overflow: hidden; background: white; border: 1px solid var(--line); }
 .playground-thumbnail { aspect-ratio: 16 / 10; position: relative; display: grid; place-items: center; background: var(--purple-soft); border-bottom: 1px solid var(--line); }
