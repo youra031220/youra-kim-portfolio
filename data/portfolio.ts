@@ -17,6 +17,7 @@ export type Project = {
   problem: string;
   actions: string[];
   result: string;
+  learnings?: string[];
   tags: string[];
   links: LinkItem[];
 };
@@ -182,14 +183,36 @@ export const projects: Project[] = [
     role: "문제 정의 · 데이터 분석 · AI Agent 기획/개발 · 마케팅 전략",
     achievement: "프로젝트 최우수상",
     problem:
-      "아직 순매수가 본격 유입되지 않았지만 향후 자금 유입 가능성이 높은 ETF를 조기에 발견해야 하는 현업 문제를 정의했습니다.",
+      "ETF 시장에서는 뉴스, 검색 트렌드, 경쟁사 홈페이지, 유튜브, 순매수 등 다양한 데이터를 각각 확인한 뒤 담당자의 경험을 바탕으로 마케팅 전략을 수립하는 경우가 많았습니다. 이 과정은 데이터 수집과 분석에 많은 시간이 소요될 뿐 아니라, 투자자의 관심이 형성되는 초기 시장 신호를 빠르게 포착하기 어렵다는 한계가 있었습니다.\n\n이에 다양한 금융·비정형 데이터를 하나의 AI Agent로 통합 분석하여 시장 변화와 경쟁사 전략을 조기에 탐지하고, 실제 실행 가능한 ETF 마케팅 전략까지 제안하는 AI 기반 의사결정 지원 시스템을 기획·개발했습니다.",
     actions: [
-      "1,000여 개 ETF의 순매수·거래량·거래대금·수익률 데이터 분석",
-      "검색 트렌드·뉴스·유튜브·경쟁사 데이터를 결합한 탐색 체계 설계",
-      "Theme Intelligence, Competitor Analysis, Emerging Signal 기능 구현",
+      "KRX ETF 데이터, 뉴스, 블로그, 유튜브, 검색 트렌드, 경쟁사 홈페이지 등 다양한 데이터를 자동 수집·통합하는 AI Agent를 설계했습니다.",
+      "Market · Evidence · Competitors · Net Buy · ETF Brief로 구성된 멀티 에이전트 기반 ETF 마케팅 인텔리전스 시스템을 기획했습니다.",
+      "Momentum Score, Marketing Intensity Score, Opportunity Score 등 시장 변화와 초기 관심 신호를 정량화하는 분석 지표를 설계했습니다.",
+      "Gemini 기반 AI 분석을 활용해 ETF 시장 변화, 경쟁사 마케팅 활동, 투자자 관심도를 종합 분석하고 실행 가능한 마케팅 전략을 자동 생성하도록 구현했습니다.",
+      "AI Agent 분석 결과를 바탕으로 AI 반도체 ETF, CoreDEX 브랜딩, 오프라인 교육 프로그램 등 실제 적용 가능한 마케팅 전략을 제안했습니다.",
     ],
     result: "신규 ETF 아이디어와 데이터 기반 마케팅 방향을 제안했습니다.",
-    tags: ["ETF", "금융 데이터", "AI Agent", "마케팅 전략", "Python"],
+    learnings: [
+      "기술보다 문제 정의가 먼저라는 점을 배웠습니다. 단순히 AI 모델을 만드는 것이 아니라, 현업 담당자가 실제 어떤 의사결정을 어려워하는지 이해하는 과정이 프로젝트의 핵심이라는 것을 경험했습니다.",
+      "데이터를 연결하는 능력이 AI 성능만큼 중요하다는 것을 체감했습니다. 뉴스, 검색량, 순매수, 경쟁사 콘텐츠처럼 성격이 다른 데이터를 하나의 분석 체계로 통합하면서 데이터 구조 설계의 중요성을 배웠습니다.",
+      "AI는 분석보다 의사결정을 지원할 때 더 큰 가치를 만든다는 것을 경험했습니다. 분석 결과를 그대로 보여주는 것이 아니라 실행 가능한 마케팅 액션으로 연결하는 구조를 설계하며 AI Agent의 역할을 고민했습니다.",
+      "정량 지표 설계가 서비스의 신뢰도를 결정한다는 점을 배웠습니다. Momentum Score, Marketing Intensity Score 등 다양한 지표를 설계하면서 ‘왜 이 ETF를 추천하는가’를 설명할 수 있는 근거를 만드는 것이 중요하다는 것을 알게 되었습니다.",
+      "현업과 협업하며 기술과 비즈니스를 함께 고려하는 사고방식을 익혔습니다. 실제 자산운용사의 요구사항을 반영하며 분석 정확도뿐 아니라 실무 활용성과 운영 가능성을 함께 고려하는 경험을 쌓았습니다.",
+    ],
+    tags: [
+      "Python",
+      "Gemini API",
+      "LLM",
+      "React",
+      "Node.js",
+      "JavaScript",
+      "KRX API",
+      "Naver Search API",
+      "YouTube Data API",
+      "Git",
+      "Prompt Engineering",
+      "Data Analysis",
+    ],
     links: [
       { label: "서비스 방문", href: "https://etf-kore.onrender.com/" },
       { label: "마케팅 제안서", href: "" },

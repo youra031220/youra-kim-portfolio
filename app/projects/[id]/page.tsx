@@ -93,7 +93,13 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
 
             <section className="project-result-panel">
               <p className="project-detail-kicker">LEARNINGS</p>
-              <h2>{project.result}</h2>
+              {project.learnings ? (
+                <ul className="project-learning-list">
+                  {project.learnings.map(learning => <li key={learning}>{learning}</li>)}
+                </ul>
+              ) : (
+                <h2>{project.result}</h2>
+              )}
             </section>
 
             <section className="project-detail-section project-resources">
